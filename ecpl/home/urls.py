@@ -2,6 +2,9 @@ from django.urls import path
 from .views import homepage,aboutus,certification,infrastructure,contactus,inbound,claimsprocessing,productinformation,ordertaking
 from .views import virtual,upselling,tollfree,answer800,ivrservices,customersupport,socialmedia,csr,technicalsupport,helpdesk,remote
 from .views import automotive,chemical,education,entertainment,energy,govt,logistics,manufacturing,retailecommerce,telecom,travel,wirelessinternetservice
+from .views import customeracquisitionservices,databaseservices,directmail,marketintelligence
+
+
 
 urlpatterns = [
     path('',homepage),
@@ -36,4 +39,8 @@ urlpatterns = [
     path('telecom',telecom),
     path('travel',travel),
     path('wireless-internet-service',wirelessinternetservice),
+    path('customer-acquisition-services',customeracquisitionservices),
+    path('database-services',databaseservices),
+    path('direct-mail',directmail),
+    path('market-intelligence',marketintelligence),
 ]

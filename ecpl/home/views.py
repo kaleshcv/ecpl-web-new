@@ -83,3 +83,13 @@ def travel(request):
 def wirelessinternetservice(request):
     return render(request,'industries/wireless-internet-service.html')
 
+#OUTBOUND
+def customeracquisitionservices(request):
+    return render(request,'outbound/customer-acquisition-services.html')
+def databaseservices(request):
+    return render(request,'outbound/database-services.html')
+def directmail(request):
+    return render(request,'outbound/direct-mail.html')
+def marketintelligence(request):
+    return render(request,'outbound/market-intelligence.html')
+
