@@ -30,6 +30,9 @@
 		<link href="{% static 'resources/css/animate.css' %}" rel="stylesheet" content="noindex, nofollow">
 		<link href="{% static 'resources/releases/v5.6.1/css/all.css' %}" rel="stylesheet">
 
+		<!------------animate on scroll--------------------->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 
 		<!--[if lt IE 9]>
@@ -869,6 +872,13 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc
 		});
 	});
 	</script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+  			AOS.init({
+  				duration:1000,
+  				});
+		</script>
 
 
 
