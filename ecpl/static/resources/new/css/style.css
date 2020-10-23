@@ -3552,9 +3552,9 @@ display: inline-block;
 .footer-feat-box { padding: 15px; overflow: hidden; margin: 10px 0 }
 .footer-feat-box h3 { color: #fff; font-size: 22px; margin-bottom: 0; }
 .footer-feat-box p { color: #fff; font-size: 12px; line-height: 1.5; }
-.footer-feat-box.box1 { background: url(../../../images/calculator-box-bg.jpg); background-size: cover }
-.footer-feat-box.box2 { background: url(../../../images/case-box-bg.jpg); background-size: cover }
-.footer-feat-box.box3 { background: url(../../../images/pricing-box-bg.jpg); background-size: cover }
+.footer-feat-box.box1 { background: url(/static/resources/images/calculator-box-bg.jpg); background-size: cover;height:172px; }
+.footer-feat-box.box2 { background: url(/static/resources/images/case-box-bg.jpg); background-size: cover;height:172px; }
+.footer-feat-box.box3 { background: url(/static/resources/images/pricing-box-bg.jpg); background-size: cover;height:172px; }
 
 
 /**--------------*/

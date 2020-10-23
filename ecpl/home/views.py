@@ -92,4 +92,17 @@ def directmail(request):
     return render(request,'outbound/direct-mail.html')
 def marketintelligence(request):
     return render(request,'outbound/market-intelligence.html')
+def outbound(request):
+    return render(request,'outbound/outbound-home.html')
+def coldcallingservices(request):
+    return render(request,'outbound/cold-calling-services.html')
+def leadgeneration(request):
+    return render(request,'outbound/lead-generation-services.html')
 
+
+#Resources
+def videos(request):
+    return render(request,'videos.html')
+
+def casestudies(request):
+    return render(request,'case-studies/case-studies-home.html')

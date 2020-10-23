@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
+		{% load static %}
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,8 +10,9 @@
 		<meta name="keywords" content="cold calling services, b2b cold calling, real estate cold calling">
 		<link rel="canonical" href="cold-calling-services.php.html">
 <link rel="icon" href="../favicon-1.ico" type="image/x-icon">
+		<script src="https://kit.fontawesome.com/cb6bf3d45d.js" crossorigin="anonymous"></script>
 <meta name="p:domain_verify" content="6f8fb4c1d8c547298699ce618e60084c">
-<!-- Bootstrap 
+<!-- Bootstrap
 <link type="text/css" href="/resources/new/css/combined-style.css" content="noindex, nofollow" rel="stylesheet" >-->
 <style type="text/css">
 	/* owl carousel */
@@ -85,7 +87,7 @@ p{margin-bottom:20px;}
 .header .background-white, #mainnav ul.submenu, #mainnav_1 ul.submenu, .shopping-cart .subcart, .header.bg-white, .header-style3.downscrolled{background-color:#ffffff;}
 .page-title{padding:31px 0px;}
 .parallax{width:100%;background-repeat:no-repeat;background-position:50% 0;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;}
-.parallax1{background:url(../images/expertcallers-breadcrumbs.png) no-repeat center right; background-size: cover;}
+.parallax1{background:url(/static/resources/images/expertcallers-breadcrumbs.png) no-repeat center right; background-size: cover;}
 .social-links li{display:inline-block;padding:0px 6px;}
 .social-links li:last-child{padding-right:0;}
 .social-links.style2{padding-right:2px;}
@@ -344,7 +346,7 @@ border-radius: 100px !important; margin-bottom: 15px;}
 .cnt-label {line-height: 22px; padding-top: 4px;}
 .counter-box {border: 2px solid #fff; border-radius: 15px; padding: 15px 10px; min-height: 215px; height:100%;}
 .mh180{min-height:180px !important;}
-.bg-callcener{background: url("../images/expertcaller-callcenter-agent-bg.jpg") no-repeat top left; background-size:cover}
+.bg-callcener{background: url("/static/resources/images/expertcaller-callcenter-agent-bg.jpg") no-repeat top left; background-size:cover}
 .list-style-tick { margin: 0; padding: 0;}
 .list-style-tick li {list-style: none; position: relative; padding-left: 35px; margin-bottom: 10px;}
 .list-style-tick li:before {content: "\f058";  font-family: "Font Awesome 5 Free"; position: absolute; left: 0;  top: 0;  color: #18a1f0;  font-weight: 900; color:#fff }
@@ -410,7 +412,7 @@ font-weight: 800; font-size: 24px;text-align: center; border-left: 0; border-rig
 
 
 /* sidebar contact css */
-.sidebar-contacts{position: fixed; top: 48%; left: 95%; z-index: 99;} 
+.sidebar-contacts{position: fixed; top: 48%; left: 95%; z-index: 99;}
 .sidebar-contacts ul {position: relative;margin: 0;padding: 0;list-style: none;}
 .sidebar-contacts .toggle li {width: 54px;height: 54px; border-radius: 50%;  cursor: pointer;}
 svg { overflow: hidden;}
@@ -525,7 +527,7 @@ blockquote.otro-blockquote span {display: block; font-weight: 600; color: #50bcf
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)  and (orientation: landscape){
   .sidebar-contacts{top: 65% ; left: 85% ;  z-index: 99;}
 }
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {    
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   .sidebar-contacts{top: 32%; left: 85%;  z-index: 99;}
 }
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (-webkit-device-pixel-ratio : 3){
@@ -618,9 +620,9 @@ blockquote.otro-blockquote span {display: block; font-weight: 600; color: #50bcf
 
 /*Portrait and landscape iPhone 5 and iPhone 5S*/
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px) 
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
 	and (-webkit-min-device-pixel-ratio: 2){
 		.intro-articles{max-height:380px;}
 }
@@ -628,31 +630,31 @@ blockquote.otro-blockquote span {display: block; font-weight: 600; color: #50bcf
 
 
 /* iphone 6 and 6s */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait){
 	.intro-articles{max-height:380px;}
 }
-	
+
 /* iphone 6+, 6s+ */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) 
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
 	and (orientation: portrait){
 	.intro-articles{max-height:378px;}
 }
 
 /* pixel */
 /* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
   and (orientation: portrait) {
-	  
+
 
 }
 
@@ -668,43 +670,43 @@ blockquote.otro-blockquote span {display: block; font-weight: 600; color: #50bcf
 	.header-style1.sticky, #mainnav-mobi.sticky{ position: fixed; transition: all .4s ease }
 	.header-style1.sticky, #mainnav-mobi.sticky { position: fixed; top: 0; left: 0;  width: 100%; z-index: 999;}
 	 #mainnav-mobi.sticky{top: 60px !important;}
-	
+
 	.mob_phone p strong { display: block; padding-top: 10px;}
 	.mob_menu_text{position: absolute; top: 15px; display: inline;color: #fff !important;}
 	.mob_phone{display: block}
 	.mob_phone p{font-size: 26px !important;}
 	#mainnav_1 ul li:hover > ul.submenu{width: 100% !important;}
-	
+
 	.mob_menu_text{display:block; background: #136fa0; border: 0 none; color: #fff; padding: 10px 12px; border-radius: 4px; font-weight: 500; position: relative; top: 14px; left: 6px; outline:0 none; float:left; }
 	#mb-getquote-form.modal { z-index: 999999999999;}
 	#mb-getquote-form.modal .modal-content {border-radius: 0; padding-top: 0; padding-bottom: 0; background:#1c668d; overflow:visible; border:0 none;}
 	#mb-getquote-form.modal .mb-getquote-form-title {text-align: center; font-weight: 600; font-size: 25px; padding: 25px 0 25px; color:#fff}
 	#mb-getquote-form.modal .form-control {background: none; padding: 8px 12px; height: 42px; border: 0 none; border-radius: 0; font-size: 14px; border: 0 none;  box-shadow: none; margin-bottom: 10px;  border-bottom: 1px solid #fff; color:#fff}
-	
-	#mb-getquote-form.modal .form-control::-webkit-input-placeholder { color: #fff !important; } 
-	#mb-getquote-form.modal .form-control:-moz-placeholder { color: #fff !important;}  
-	#mb-getquote-form.modal .form-control::-moz-placeholder { color: #fff !important; } 
-	#mb-getquote-form.modal .form-control:-ms-input-placeholder { color: #fff !important; }  
-	#mb-getquote-form.modal .form-control::-ms-input-placeholder { color: #fff !important;} 
-	
+
+	#mb-getquote-form.modal .form-control::-webkit-input-placeholder { color: #fff !important; }
+	#mb-getquote-form.modal .form-control:-moz-placeholder { color: #fff !important;}
+	#mb-getquote-form.modal .form-control::-moz-placeholder { color: #fff !important; }
+	#mb-getquote-form.modal .form-control:-ms-input-placeholder { color: #fff !important; }
+	#mb-getquote-form.modal .form-control::-ms-input-placeholder { color: #fff !important;}
+
 
 	#mb-getquote-form.modal .btn.btn-success {padding:8px 6px; width: 100%; background: #e9a13b; box-shadow: none; border: 0 none; border-radius: 0; margin-top: 7px;}
-	
+
 	#mb-getquote-form.modal .btn.btn-success span {font-size: 20px !important;}
-	#mb-getquote-form.modal button.close {float: none; width: 34px; height: 34px; position: absolute; right: 10px; top: -15px; background: #fff; color: #000; 
+	#mb-getquote-form.modal button.close {float: none; width: 34px; height: 34px; position: absolute; right: 10px; top: -15px; background: #fff; color: #000;
 box-shadow: none; border-radius: 6px; opacity: 1; z-index: 9999; border: 2px solid #666;}
 	body #mb-getquote-form.modal .modal-backdrop.in{opacity: 0.8;}
 	.mb-getquote-line {width: 80px; height: 3px; margin: 0 auto;  background: #fff; margin-bottom: 25px;}
 	body.modal-open {height: 100vh;overflow-y: hidden;}
-	
+
 	#mb-getquote-form.modal .form-control::placeholder {color: #666;}
 	#mb-getquote-form.modal textarea.form-control{min-height:100px;}
-	
+
 	#mb-getquote-form.modal:before {content: '';  display: inline-block;  height: 100%;  vertical-align: middle;  margin-right: -4px;}
 	#mb-getquote-form.modal .modal-dialog {display: inline-block;text-align: left;  vertical-align: middle;  width: 93%;}
 	body.modal-open{overflow:hidden;}
 	.modal-backdrop.show.modal-grey-bg{background:#e9e9e9; opacity: 1;}
-	
+
 }
 
 @media only screen and (max-width: 1199px){
@@ -740,7 +742,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name='og:image' content='https://www.expertcallers.com/images/ssm/cold-calling-services.jpg'>
 <meta property='og:url' content='https://www.expertcallers.com/outbound-call-center/cold-calling-services.php'>
 <meta name='og:site_name' content='expertcallers'>
-<meta name='og:video' content='https://youtu.be/johAd3OHK-k'> 
+<meta name='og:video' content='https://youtu.be/johAd3OHK-k'>
 <meta name='fb:admins' content='171614053303670'>
 <meta name='fb:app_id' content='1162690897186010'>
 <meta name='og:type' content='website'>
@@ -877,7 +879,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="col-lg-3">
             <div id="logo" class="logo">
               <a href="../index.htm" rel="home">
-                <img src="../images/expertcallers-logo-1.png" alt="Expertcallers logo" class="img-fluid">
+                <img src="{% static 'resources/images/expertcallers-logo-1.png' %}" alt="Expertcallers logo" class="img-fluid">
               </a>
             </div>
             <!-- /.logo -->
@@ -935,12 +937,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <li class="sales callbtn">
                   <a href="tel:1877-374-0211" class="">Talk to Sales <span>1877-374-0211</span></a>
                 </li>
-               
+
               </ul>
               <!-- /.menu -->
             </nav>
             <!-- /.mainnav -->
-            
+
             <!-- //mobile menu button -->
           </div>
           <!-- /.nav-wrap -->
@@ -953,7 +955,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <!-- /.header -->
-<div class="mob_phone"> 
+<div class="mob_phone">
   <hr>
   <div class="p-1 text-center mt-3 pb-0">
     <p>Toll Free No: <strong><a href="tel:1877-374-0211">1877-374-0211</a></strong></p>
@@ -967,11 +969,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="nav-wrap clearfix">
           <!--<a href="" class="mob_menu_text">Menu</a>-->
 		  <button type="button" class="mob_menu_text" data-toggle="modal" data-target="#mb-getquote-form">Request a Callback</button>
-		  
+
           <nav id="mainnav_1" class="mainnav">
             <ul class="menu">
               <li>
-                <a href="#">Inbound Call Center</a> 
+                <a href="#">Inbound Call Center</a>
                 <ul class="submenu row">
                   <li class="col-md-12 text-center bg-primary"> <div class="pt-1 menu-tit pb-1"><a href="../inbound-call-center/index.htm" class=" text-white"><i class="fa fa-chevron-circle-right"></i> Inbound Call Center</a></div></li>
                   <li class="col-md-4"><a href="../inbound-call-center/claims-processing-services.php.html">Claims Processing Services</a></li>
@@ -995,7 +997,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <li class="col-md-4"><a href="customer-satisfaction-surveys.php.html">Customer Satisfaction Surveys</a> </li>
                   <li class="col-md-4"><a href="telesales-customer-acquisition-services.php.html">Customer Acquisition and Telesales Services</a> </li>
                   <li class="col-md-4"><a href="appointment-setting-services.php.html">Appointment Setting Services</a> </li>
-                 
+
                   <li class="col-md-4"><a href="direct-mail-follow-up-services.php.html">Direct Mail Follow-Up Services </a> </li>
                   <li class="col-md-4"><a href="market-intelligence-services.php.html">Market Intelligence Services </a> </li>
                    <li class="col-md-6"><a href="database-services.php.html">Database Development and Management Services </a> </li>
@@ -1080,11 +1082,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </li>
             </ul>
           </nav>
-          
+
 		  <div class="btn-menu">
            <span></span>
           </div>
-		  
+
         </div>
       </div>
     </div>
@@ -1144,8 +1146,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 		<!-- /.row -->
 		<div class="wrap-formrequest">
-			
-	
+
+
 				<form name="SmallForm" method="post" action="/forms/contact-us-submit.php" onsubmit="return validateForm(this)" id="SmallForm" enctype="multipart/form-data" class="contactform wrap-form clearfix">
 				<span class="flat-input"><input type="text" name="FirstName" placeholder="Name*" required="required"></span>
 				<span class="flat-input"><input required="required" type="email" name="Email" placeholder="Email*"></span>
@@ -1374,7 +1376,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<li class="deatils">
 				<textarea required="required" class="txt-area" rows="4" cols="" placeholder="Enter your requirements*" name="description"></textarea></li>
 			</ul>
-			
+
 			<!-- <a class="privacy-policy pull-left" href="/privacy-policy.php">Privacy Policy</a> -->
 			<input type="hidden" name="action_value" value="rsbform">
 			<input type="hidden" name="currentpage_url" value="/outbound-call-center/cold-calling-services.php">
@@ -1406,7 +1408,7 @@ email: true
 },
 			phone: {required: true},
 			description: {required: true},
-			
+
 },
 
 // Specify the validation error messages
@@ -1609,9 +1611,9 @@ form.submit();
 						<h2 class="title text-center">Industries We Serve</h2>
 					</div>
 					<div class="text-center line100 pl-3 pr-3">ExpertCallers has extensive experience in providing proficient call centre services to a wide variety to industries including:</div>
-					
+
 					<div class="row mt-4">
-					
+
 						<div class="col-12 col-sm-12 col-md-6 col-lg-6">
 							<div class="industries-list pb-0 pb-md-4 pb-lg-4">
 								<ul>
@@ -1633,7 +1635,7 @@ form.submit();
 								</ul>
 							</div>
 						</div>
-						
+
 						<div class="col-12 col-sm-12 col-md-6 col-lg-6">
 							<div class="industries-list pt-0 pt-md-4 pt-lg-4">
 								<ul>
@@ -1655,9 +1657,9 @@ form.submit();
 							</ul>
 							</div>
 						</div>
-						
+
 					</div>
-					
+
 											</div>
 					</div>
 				</div>
@@ -1668,7 +1670,7 @@ form.submit();
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="title-section">
-								<h2 class="title text-center text-white">Here's How Companies Have Benefitted by Outsourcing Cold Calling Services to ExpertCallers</h2> 
+								<h2 class="title text-center text-white">Here's How Companies Have Benefitted by Outsourcing Cold Calling Services to ExpertCallers</h2>
 							</div>
 						</div>
 					</div>
@@ -1741,7 +1743,7 @@ form.submit();
 					</div>
 					<p class="mb-0 text-center">We let you pick one or multiple delivery centers according to your preference and requirement.</p>
 				</div>
-			
+
 				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 					<img data-src="https://cdn.expertcallers.com/images/expertcallers-map.jpg" alt="ExpertCallers global delivery centers (India, Philippines, Bolivia, Colombia &amp; Argentina)" class="img-fluid lazy">
 				</div>
@@ -2135,7 +2137,7 @@ form.submit();
 								</div>
 								<!-- Accordion card -->
 								<!-- Accordion card -->
-								
+
 								<!-- Accordion card -->
 								<!-- Accordion card -->
 								<div class="card">
@@ -2375,7 +2377,7 @@ form.submit();
             <li class="hidden-sm-up"><a href="../sitemap.php.html" title="Sitemap">Sitemap</a></li>
           </ul>
         </div>
-      </div>  
+      </div>
  <div class="col-lg-3 col-sm-6 reponsive-mb30">
         <div class="widget widget-out-link clearfix">
           <img data-src="https://cdn.expertcallers.com/images/expertcallers-certifications.png" alt="ExpertCallers certifications" class="img-fluid pb-3 lazy">
@@ -2403,8 +2405,8 @@ form.submit();
             <li><a href="../expertcallers.html" rel="nofollow"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://www.linkedin.com/company/expertcallers" rel="nofollow"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="../channel/UClZWPvQxiuAbnzVKlJv5Wog.html" rel="nofollow"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="../ExpertCallers-1.html" rel="nofollow"><i class="fab fa-slideshare"></i></a></li>            
-          </ul>          
+            <li><a href="../ExpertCallers-1.html" rel="nofollow"><i class="fab fa-slideshare"></i></a></li>
+          </ul>
         </div>
       </div>
       </div><!-- /.container -->
@@ -2432,7 +2434,7 @@ form.submit();
         </div>
       </div>
       </div>
-</div> 
+</div>
 
 <div class="sidebar-contacts" id="sidebar-contacts">
     <div class="menu-object">
@@ -2490,10 +2492,10 @@ form.submit();
     </div>
   </div>
 </div>
-<!-- 
+<!--
 <script src='https://www.google.com/recaptcha/api.js'></script> -->
-<script src="../ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js" content="noindex, nofollow"></script>
-<script type="text/javascript"> 
+<script src="{% static 'resources/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js' %}" content="noindex, nofollow"></script>
+<script type="text/javascript">
 	$(document).ready(function() {
 		 if ($.cookie('pop') == null) {
 			 $('#popup-covid19').modal('show');
@@ -2501,18 +2503,22 @@ form.submit();
 		 }
 	 });
 </script>
-<script src="../resources/new/js/jquery.min.js" content="noindex, nofollow"></script>
-<script src="../bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" content="noindex, nofollow"></script>
-<script type="text/javascript" src="../ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-<script type="text/javascript" src="../ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-<script src="../resources/new/js/combined-scripts.js" content="noindex, nofollow"></script>
+
+
+<script src="{% static 'resources/new/js/jquery.min.js' %}" content="noindex, nofollow"></script>
+<script src="{% static 'resources/bootstrap/4.4.1/js/bootstrap.min.js' %}" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" content="noindex, nofollow"></script>
+<script type="text/javascript" src="{% static 'resources/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'resources/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js' %}"></script>
+<script src="{% static 'resources/new/js/combined-scripts.js' %}" content="noindex, nofollow"></script>
+
+
 <script>
 	 $(function() {
         $('.lazy').Lazy();
     });
 </script>
 <script>
-	// get a quote form 
+	// get a quote form
  $('#mb-getquote-form').on('shown.bs.modal', function () {
     $('.modal-backdrop').addClass('modal-grey-bg');
   })
@@ -2528,8 +2534,8 @@ form.submit();
   }
   });
 </script>
-<link href="../css-2.css?family=Work+Sans:400,600,700,800" rel="stylesheet dns-prefetch">
-<link href="../releases/v5.6.1/css/all.css" rel="stylesheet dns-prefetch">
+<link href="{% static 'resources/css-2.css?family=Work+Sans:400,600,700,800' %}" rel="stylesheet dns-prefetch">
+<link href="{% static '/releases/v5.6.1/css/all.css' %}" rel="stylesheet dns-prefetch">
 
 <!-- sidebar call to action SCRIPT END -->
       <!-- Start of LiveChat (www.livechatinc.com) code -->

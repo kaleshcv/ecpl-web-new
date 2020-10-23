@@ -2,8 +2,8 @@ from django.urls import path
 from .views import homepage,aboutus,certification,infrastructure,contactus,inbound,claimsprocessing,productinformation,ordertaking
 from .views import virtual,upselling,tollfree,answer800,ivrservices,customersupport,socialmedia,csr,technicalsupport,helpdesk,remote
 from .views import automotive,chemical,education,entertainment,energy,govt,logistics,manufacturing,retailecommerce,telecom,travel,wirelessinternetservice
-from .views import customeracquisitionservices,databaseservices,directmail,marketintelligence
-
+from .views import customeracquisitionservices,databaseservices,directmail,marketintelligence,outbound,coldcallingservices,leadgeneration
+from .views import videos,casestudies
 
 
 urlpatterns = [
@@ -43,4 +43,9 @@ urlpatterns = [
     path('database-services',databaseservices),
     path('direct-mail',directmail),
     path('market-intelligence',marketintelligence),
+    path('videos',videos),
+    path('case-studies',casestudies),
+    path('outbound-home',outbound),
+    path('cold-calling-services',coldcallingservices),
+    path('lead-generation',leadgeneration),
 ]

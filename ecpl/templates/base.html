@@ -30,6 +30,8 @@
 		<link href="{% static 'resources/css/animate.css' %}" rel="stylesheet" content="noindex, nofollow">
 		<link href="{% static 'resources/releases/v5.6.1/css/all.css' %}" rel="stylesheet">
 
+
+
 		<!------------animate on scroll--------------------->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -149,8 +151,8 @@
 					  Resources
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="videos.php.html">Videos</a>
-					  <a class="dropdown-item" href="case-studies/index.htm">Case Studies</a>
+					  <a class="dropdown-item" href="videos">Videos</a>
+					  <a class="dropdown-item" href="case-studies">Case Studies</a>
 					  <a class="dropdown-item" href="blog/index.htm">Blog</a>
 					  <a class="dropdown-item" href="blog/infographics/index.htm">Infographics</a>
 					  <a class="dropdown-item" href="reference-letters/index.htm">Reference Letters</a>
@@ -180,8 +182,7 @@
 
 
 
-
-		<section class="navbar navbar-light navbar-inverse navbar-static-top bd-navbar main-menu menu-header">
+	<section class="navbar navbar-light navbar-inverse navbar-static-top bd-navbar main-menu menu-header">
 
 	<div class="container">
 
@@ -238,11 +239,11 @@
 
 						<div class="dropdown-menu" aria-labelledby="outbound">
 
-							<a class="dropdown-item" href="outbound-call-center/index.htm">Outbound Call Center</a>
+							<a class="dropdown-item" href="outbound-home">Outbound Call Center</a>
 
 							<a class="dropdown-item" href="outbound-call-center/cold-calling-services.php.html">Cold Calling Services</a>
 
-							<a class="dropdown-item" href="outbound-call-center/lead-generation-services.php.html">Lead Generation Services</a>
+							<a class="dropdown-item" href="lead-generation">Lead Generation Services</a>
 
 							<a class="dropdown-item" href="outbound-call-center/customer-satisfaction-surveys.php.html">Customer Satisfaction Surveys</a>
 
@@ -655,7 +656,7 @@ svg { overflow: hidden;}
 				</button>
 			  <div class="modal-body">
 			  	<div class="cvicon">
-			  		<img src="images/expertcallers-covid-business-distribution.png" class="img-responsive" alt="COVID-19 Impact - ExpertCallers Business Continuity Plan">
+			  		<img src="{% static 'resources/images/expertcallers-covid-business-distribution.png' %}" class="img-responsive" alt="COVID-19 Impact - ExpertCallers Business Continuity Plan">
 			  	</div>
 
 			   <div class="covid-bis-title"> Business Disruption for Others; Business as Usual for You.</div>
