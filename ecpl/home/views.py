@@ -131,6 +131,17 @@ def telemarketing(request):
     return render(request,'telemarketing.html')
 def disasterrecovery(request):
     return render(request,'disaster-recovery.html')
+def bpaas(request):
+    return render(request,'bpaas.html')
+def callcenterconsulting(request):
+    return render(request,'call-center-consulting-services.html')
+
+def superagentservices(request):
+    return render(request,'super-agent-services.html')
+
+def bilingual(request):
+    return render(request,'bilingual-call-center.html')
+
 
 #SERVICES
 def bposervices(request):
@@ -139,6 +150,21 @@ def bposervices(request):
 #Resources
 def videos(request):
     return render(request,'videos.html')
-
+def reference(request):
+    return render(request,'reference-letters.html')
+def testimonials(request):
+    return render(request,'testimonials.html')
 def casestudies(request):
     return render(request,'case-studies/case-studies-home.html')
+
+#COVID -19
+
+def bcpcovid(request):
+    return render(request,'bcp-covid-19.html')
+#FAQ
+def faq(request):
+    return render(request,'call-center-faqs.html')
+def callcenterindia(request):
+    return render(request,'call-center-services-india.html')
+def callcenterphilippines(request):
+    return render(request,'call-center-services-philippines.html')

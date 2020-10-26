@@ -5,10 +5,11 @@ from .views import automotive,chemical,education,entertainment,energy,govt,logis
 from .views import customeracquisitionservices,databaseservices,directmail,marketintelligence,outbound,coldcallingservices,leadgeneration
 from .views import customersatisfaction,appointmentsetting
 from .views import bposervices,phoneanswering,medicalanswering
-from .views import videos,casestudies
+from .views import videos,casestudies,reference
 from .views import emailsupport,chatsupport
-from .views import catiservice,cctvmonitoring,telemarketing,disasterrecovery
-from .views import healthcare
+from .views import catiservice,cctvmonitoring,telemarketing,disasterrecovery,bpaas,callcenterconsulting,superagentservices,bilingual
+from .views import healthcare,testimonials
+from .views import bcpcovid,faq,callcenterindia,callcenterphilippines
 
 urlpatterns = [
     path('',homepage),
@@ -66,5 +67,14 @@ urlpatterns = [
     path('disaster-recovery',disasterrecovery),
     path('banking-financial',bankingfinancial),
     path('healthcare',healthcare),
-
+    path('reference-letters',reference),
+    path('testimonials',testimonials),
+    path('bpaas',bpaas),
+    path('call-center-consulting-services',callcenterconsulting),
+    path('super-agent-services',superagentservices),
+    path('bilingual-call-center',bilingual),
+    path('bcp-covid-19',bcpcovid),
+    path('call-center-faqs',faq),
+    path('call-center-services-india',callcenterindia),
+    path('call-center-services-philippines',callcenterphilippines),
 ]
