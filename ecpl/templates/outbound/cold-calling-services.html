@@ -254,9 +254,9 @@ p{margin-bottom:20px;}
 .footer-feat-box{padding:15px;overflow:hidden;margin:10px 0 }
 .footer-feat-box h3{color:#fff;font-size:22px;margin-bottom:0;}
 .footer-feat-box p{color:#fff;font-size:12px;line-height:1.5;}
-.footer-feat-box.box1{background:url(../images/calculator-box-bg-1.jpg);background-size:cover }
-.footer-feat-box.box2{background:url(../images/case-box-bg-1.jpg);background-size:cover }
-.footer-feat-box.box3{background:url(../images/pricing-box-bg-1.jpg);background-size:cover }
+.footer-feat-box.box1{background:url(/static/resources/images/calculator-box-bg-1.jpg);background-size:cover }
+.footer-feat-box.box2{background:url(/static/resources/images/case-box-bg-1.jpg);background-size:cover }
+.footer-feat-box.box3{background:url(/static/resources/images/pricing-box-bg-1.jpg);background-size:cover }
 .intro-video-playicon{background:#fff;border-radius:100%;width:6.25em;height:6.25em;display:flex;position:absolute;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);left:50%;z-index:100}
 .intro-video-playicon:before{content:'';display:inline-block;position:absolute;top:-2px;left:-2px;bottom:-2px;right:-2px;border:1px solid #00a9ef;-webkit-animation:btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;animation:btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;border-radius:100% }
 .intro-video-playicon{display:flex;align-items:center;justify-content:center;}
@@ -336,7 +336,7 @@ border-radius: 100px !important; margin-bottom: 15px;}
 .benfit-carousel.owl-carousel.owl-theme.navright .owl-nav {position: absolute; top: -60px; left: auto; right:0;}
 .benfit-carousel.owl-carousel.owl-theme .owl-nav [class*=owl-] {padding:0 7px;}
 
-.ecsp{background-image:url(../images/ec-sprite.png); background-repeat:no-repeat; display:inline-block;}
+.ecsp{background-image:url(/static/resources/images/ec-sprite.png); background-repeat:no-repeat; display:inline-block;}
 .ecsp.icon1{background-position:-2px 0; width:58px; height:58px;}
 .ecsp.icon2{background-position:-79px 0; width:58px; height:58px;}
 .ecsp.icon3{background-position:-150px 0; width:58px; height:58px;}
@@ -439,7 +439,7 @@ svg { overflow: hidden;}
 .sidebar-contacts.active .menu-object .ico01:after {transform: rotate(45deg);}
 .lineHt40 .industries-list ul li{line-height:40px;}
 #mainnav.mainnav.style2 > ul > li {position:relative}
-.key-dif .img {text-align:center; width:101px; height:83px; margin:0 auto; background:url(../images/icons-1.png) no-repeat}
+.key-dif .img {text-align:center; width:101px; height:83px; margin:0 auto; background:url(/static/resources/images/icons-1.png) no-repeat}
 .key-dif .img.com_training {background-position:-26px 0}
 .key-dif .img.spl_per {background-position:-560px 0}
 .key-dif .img.spl_per1 {background-position:-700px 0}
@@ -871,15 +871,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="flat-header-wrap sticky">
-  <!-- Header -->
+
+		 <!-- Header -->
   <div class="header widget-header clearfix">
     <div class="container">
       <div class="header-wrap clearfix">
         <div class="row">
           <div class="col-lg-3">
-            <div id="logo" class="logo">
-              <a href="../index.htm" rel="home">
-                <img src="{% static 'resources/images/expertcallers-logo-1.png' %}" alt="Expertcallers logo" class="img-fluid">
+            <div id="logo">
+              <a href="/" rel="home">
+                <img src="{% static 'resources/images/expertcallers-logo-1.png' %}" alt="Expertcallers logo" class="img-fluid" style="margin-top:16px;margin-left:5px;">
               </a>
             </div>
             <!-- /.logo -->
@@ -890,47 +891,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <nav id="mainnav" class="mainnav style2 color-93a float-left">
                   <ul class="menu">
                     <li>
-                      <a href="../call-center-bpo-services.php.html">Services</a>
+                      <a href="bpo-services">Services</a>
                     </li>
                     <li><a href="#">Industries</a>
                     <ul class="submenu">
-                      <li> <a href="../industries/automotive.php.html">Automotive</a></li>
-                      <li><a href="../industries/chemical-pharmaceutical.php.html">Chemical</a></li>
-                      <li><a href="../industries/education.php.html">Education</a></li>
-                      <li><a href="../industries/entertainment.php.html">Entertainment</a></li>
-                      <li><a href="../industries/energy-utilities.php.html">Energy Utilities</a></li>
-                      <li><a href="../industries/banking-financial.php.html">Financial</a></li>
-                      <li><a href="../industries/government-agencies.php.html">Government Agencies</a></li>
-                      <li><a href="../industries/healthcare.php.html">Healthcare</a></li>
-                      <li><a href="../industries/logistics-transportation.php.html">Logistics & Transportation</a></li>
-                      <li><a href="../industries/manufacturing.php.html">Manufacturing</a></li>
-                      <li><a href="../industries/real-estate.php.html">Real Estate</a></li>
-                      <li> <a href="../industries/retail-ecommerce.php.html">Retail E-Commerce</a></li>
-                      <li><a href="../industries/telecom.php.html">Telecom</a></li>
-                      <li><a href="../industries/travel-hospitality.php.html">Travel</a></li>
-                      <li><a href="../industries/wireless-internet-service.php.html">Wireless Internet Service</a></li>
+                      <li><a href="automotive">Automotive</a></li>
+					 <li><a href="chemical">Chemical</a></li>
+					 <li><a href="education">Education</a></li>
+					 <li><a href="entertainment">Entertainment</a></li>
+					 <li><a href="energy-utilities">Energy Utilities</a></li>
+					 <li><a href="banking-financial">Financial</a></li>
+					 <li><a href="government-agencies">Government Agencies</a></li>
+					 <li><a href="healthcare">Healthcare</a></li>
+					 <li><a href="logistics">Logistics & Transportation</a></li>
+					 <li><a href="manufacturing">Manufacturing</a></li>
+					 <li><a href="real-estate">Real Estate</a></li>
+					 <li><a href="retail-ecommerce">Retail E-Commerce</a></li>
+					 <li><a href="telecom">Telecom</a></li>
+					 <li><a href="travel">Travel</a></li>
+					 <li><a href="wireless-internet-service">Wireless Internet Service</a></li>
                     </ul>
                     <!-- /.submenu -->
                   </li>
                   <li><a href="#"> Resources</a>
                   <ul class="submenu">
-                    <li> <a href="../videos.php.html">Videos</a> </li>
-                    <li><a href="../case-studies/index.htm">Case Studies</a> </li>
-                    <li> <a href="../blog/index.htm">Blog</a> </li>
-                    <li><a href="../blog/infographics/index.htm">Infographics</a> </li>
-                    <li><a href="../reference-letters/index.htm">Reference Letters</a> </li>
-                    <li><a href="../testimonials.php.html">Testimonials</a> </li>
+                    <li><a href="videos">Videos</a></li>
+					  <li><a href="case-studies">Case Studies</a></li>
+					  <li><a href="blog/index.htm">Blog</a></li>
+					  <li><a href="blog/infographics/index.htm">Infographics</a></li>
+					  <li><a href="reference-letters/index.htm">Reference Letters</a></li>
+					  <li><a href="testimonials.php.html">Testimonials</a></li>
                   </ul>
                   <!-- /.submenu -->
                 </li>
                 <li>
                   <a href="#">Company</a>
                   <ul class="submenu">
-                    <li><a href="../aboutus.php.html" title="About us">About Us</a> </li>
-                    <li><a href="../iso-certification.php.html">Certification</a> </li>
-                    <li><a href="../call-center-infrastructure.php.html" title="Infrastructure">Infrastructure</a> </li>
-                    <li><a href="../careers/index.htm" title="careers">Careers</a> </li>
-                    <li><a href="../contactus.php.html" title="Contact us">Contact Us</a> </li>
+                    <li><a href="aboutus" title="About us">About Us</a></li>
+					  <li><a href="certification">Certification</a></li>
+					  <li><a href="infrastructure" title="Infrastructure">Infrastructure</a></li>
+					  <li><a href="careers/index.htm" title="careers">Careers</a></li>
+					  <li><a href="contactus" title="Contact us">Contact Us</a></li>
                   </ul>
                   <!-- /.submenu -->
                 </li>
@@ -961,6 +962,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <p>Toll Free No: <strong><a href="tel:1877-374-0211">1877-374-0211</a></strong></p>
   </div>
 </div>
+
+
 <header id="header" class="header header-classic header-style1">
 <div class="container">
   <div class="row">
@@ -975,108 +978,116 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <li>
                 <a href="#">Inbound Call Center</a>
                 <ul class="submenu row">
-                  <li class="col-md-12 text-center bg-primary"> <div class="pt-1 menu-tit pb-1"><a href="../inbound-call-center/index.htm" class=" text-white"><i class="fa fa-chevron-circle-right"></i> Inbound Call Center</a></div></li>
-                  <li class="col-md-4"><a href="../inbound-call-center/claims-processing-services.php.html">Claims Processing Services</a></li>
-                   <li class="col-md-4"><a href="../inbound-call-center/product-information-request-services.php.html">Product Information Request Services</a></li>
-                   <li class="col-md-4"><a href="../inbound-call-center/order-taking-services.php.html">Order Taking Services</a></li>
-                   <li class="col-md-4"> <a href="../inbound-call-center/virtual-receptionist-services.php.html">Virtual Receptionist Services</a></li>
-                   <li class="col-md-4"> <a href="../inbound-call-center/medical-answering-services.php.html">Medical Answering Services</a></li>
-                   <li class="col-md-4"> <a href="../inbound-call-center/phone-answering-services.php.html">Phone Answering Services</a></li>
-                   <li class="col-md-4"> <a href="../inbound-call-center/up-selling-cross-selling-services.php.html">Up-selling and Cross-selling Services</a></li>
-                   <li class="col-md-4"> <a href="../inbound-call-center/toll-free-customer-support-services.php.html">Toll Free Customer Support Services</a></li>
-                   <li class="col-md-4"><a href="../inbound-call-center/800-answering-services.php.html">800 Answering Services</a></li>
-                   <li class="col-md-4"><a href="../inbound-call-center/ivr-services.php.html">IVR Services</a></li>
+                  <li class="col-md-12 text-center bg-primary"> <div class="pt-1 menu-tit pb-1"><a href="inboundp" class=" text-white"><i class="ti-arrow-circle-right"></i> Inbound Call Center</a></div></li>
+                            <li class="col-md-4"><a href="claimsprocessing">Claims Processing Services</a></li>
+
+							<li class="col-md-4"><a href="productinformation">Product Information Request Services</a></li>
+
+							<li class="col-md-4"><a href="ordertaking">Order Taking Services</a></li>
+
+							<li class="col-md-4"><a href="virtual">Virtual Receptionist Services</a></li>
+
+							<li class="col-md-4"><a href="medical-answering">Medical Answering Services</a></li>
+
+							<li class="col-md-4"><a href="phone-answering">Phone Answering Services</a></li>
+
+							<li class="col-md-4"><a href="upselling">Up-selling and Cross-selling Services</a></li>
+
+							<li class="col-md-4"><a href="tollfree">Toll Free Customer Support Services</a></li>
+
+							<li class="col-md-4"><a href="800answering">800 Answering Services</a></li>
+
+							<li class="col-md-4"><a href="ivrservices">IVR Services</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#">Outbound Call Center   </a>
               <ul class="submenu row">
-                  <li class="col-md-12 text-center bg-primary"> <div class="pt-1 menu-tit pb-1"><a href="index.htm" class=" text-white"><i class="fa fa-chevron-circle-right"></i> Outbound Call Center   </a></div></li>
-                  <li class="col-md-4"><a href="cold-calling-services.php.html">Cold Calling Services</a> </li>
-                  <li class="col-md-4"><a href="lead-generation-services.php.html">Lead Generation Services</a> </li>
-                  <li class="col-md-4"><a href="customer-satisfaction-surveys.php.html">Customer Satisfaction Surveys</a> </li>
-                  <li class="col-md-4"><a href="telesales-customer-acquisition-services.php.html">Customer Acquisition and Telesales Services</a> </li>
-                  <li class="col-md-4"><a href="appointment-setting-services.php.html">Appointment Setting Services</a> </li>
+                  <li class="col-md-12 text-center bg-primary"> <div class="pt-1 menu-tit pb-1"><a href="index.htm" class=" text-white"><i class="ti-arrow-circle-right"></i> Outbound Call Center   </a></div></li>
+                  <li class="col-md-4"><a href="cold-calling-services">Cold Calling Services</a> </li>
+                  <li class="col-md-4"><a href="lead-generation">Lead Generation Services</a> </li>
+                  <li class="col-md-4"><a href="customer-satisfaction">Customer Satisfaction Surveys</a> </li>
+                  <li class="col-md-4"><a href="customer-acquisition-services">Customer Acquisition and Telesales Services</a> </li>
+                  <li class="col-md-4"><a href="appointment-setting-services">Appointment Setting Services</a> </li>
 
-                  <li class="col-md-4"><a href="direct-mail-follow-up-services.php.html">Direct Mail Follow-Up Services </a> </li>
-                  <li class="col-md-4"><a href="market-intelligence-services.php.html">Market Intelligence Services </a> </li>
-                   <li class="col-md-6"><a href="database-services.php.html">Database Development and Management Services </a> </li>
+                  <li class="col-md-4"><a href="direct-mail">Direct Mail Follow-Up Services </a> </li>
+                  <li class="col-md-4"><a href="market-intelligence">Market Intelligence Services </a> </li>
+                   <li class="col-md-6"><a href="database-services">Database Development and Management Services </a> </li>
                 </ul>
               </li>
               <li>
                 <a href="#">Customer Support</a>
                <ul class="submenu row">
-                  <li class="col-md-12 text-center bg-primary"> <div class="pt-1 menu-tit pb-1"><a href="../customer-support-services.php.html" class="text-white"><i class="fa fa-chevron-circle-right"></i> Customer Support</a></div> </li>
-                  <li class="col-md-6"><a href="../social-media-customer-support-services.php.html">Social Media Customer Support</a> </li>
-                  <li class="col-md-6"><a href="../customer-service-representative-services.php.html"> Customer Service Representative</a> </li>
+                  <li class="col-md-12 text-center bg-primary"> <div class="pt-1 menu-tit pb-1"><a href="customersupport" class="text-white"><i class="ti-arrow-circle-right"></i> Customer Support</a></div> </li>
+                  <li class="col-md-6"><a href="social-media">Social Media Customer Support</a> </li>
+                  <li class="col-md-6"><a href="csr"> Customer Service Representative</a> </li>
                 </ul>
               </li>
               <li>
-                <a href="../email-support-services.php.html">Email Support</a>
+                <a href="email-support">Email Support</a>
               </li>
               <li>
-                <a href="../chat-support-services.php.html">Chat Support</a>
+                <a href="chat-support">Chat Support</a>
               </li>
               <li>
                 <a href="#">Tech SUPPORT</a>
               <ul class="submenu row">
-                  <li class="col-md-12 text-center bg-primary"><a href="../technical-helpdesk/index.htm" class="bg-primary text-white"><i class="fa fa-chevron-circle-right"></i> Technical  Support</a> </li>
-                  <li class="col-md-4">                  <a href="../technical-helpdesk/help-desk-services.php.html">Help Desk Support Services</a> </li>
-                  <li class="col-md-4"><a href="../technical-helpdesk/remote-it-support-services.php.html">Remote IT Support Services</a> </li>
+                  <li class="col-md-12 text-center bg-primary"><a href="technical-support" class="bg-primary text-white"><i class="ti-arrow-circle-right"></i> Technical  Support</a> </li>
+                  <li class="col-md-4">                  <a href="helpdesk">Help Desk Support Services</a> </li>
+                  <li class="col-md-4"><a href="remote-IT">Remote IT Support Services</a> </li>
                 </ul>
               </li>
               <li class="last">
                 <a href="#">Other Services </a>
              <ul class="submenu row">
-                  <li class="col-md-4"><a href="../business-process-as-a-service.php.html">BPasS</a> </li>
-                  <li class="col-md-4"><a href="../cati-services/index.htm" id="cati-services">CATI Services </a> </li>
-                  <li class="col-md-4"><a href="../cctv-monitoring.php.html">CCTV Monitoring</a> </li>
-                  <li class="col-md-4"><a href="../telemarketing-services/index.htm">Telemarketing</a> </li>
-                  <li class="col-md-4"><a href="../disaster-recovery-services.php.html">Disaster Recovery Services</a> </li>
-                  <li class="col-md-4"><a href="../call-center-consulting-services.php.html" id="call-center-consulting-services">Call Center Consulting Services </a> </li>
-                  <li class="col-md-4"><a href="../super-agent-services.php.html" class="dropdown-item">Super Agent Services </a> </li>
-                  <li class="col-md-4"><a href="../bilingual-call-center-services.php.html">Bilingual Call Center Services </a> </li>
+                  <li class="col-md-4"><a href="bpaass">BPasS</a> </li>
+                  <li class="col-md-4"><a href="cati-services" id="cati-services">CATI Services </a> </li>
+                  <li class="col-md-4"><a href="cctv-monitoring">CCTV Monitoring</a> </li>
+                  <li class="col-md-4"><a href="telemarketing">Telemarketing</a> </li>
+                  <li class="col-md-4"><a href="disaster-recovery">Disaster Recovery Services</a> </li>
+                  <li class="col-md-4"><a href="call-center-consulting" id="call-center-consulting-services">Call Center Consulting Services </a> </li>
+                  <li class="col-md-4"><a href="super-agent" class="dropdown-item">Super Agent Services </a> </li>
+                  <li class="col-md-4"><a href="bilingual-call-center">Bilingual Call Center Services </a> </li>
                 </ul>
               </li>
               <li class="hidden-md-up"><a href="#">Industries</a>
                     <ul class="submenu">
-                      <li> <a href="../industries/automotive.php.html">Automotive</a></li>
-                      <li><a href="../industries/chemical-pharmaceutical.php.html">Chemical</a></li>
-                      <li><a href="../industries/education.php.html">Education</a></li>
-                      <li><a href="../industries/entertainment.php.html">Entertainment</a></li>
-                      <li><a href="../industries/energy-utilities.php.html">Energy Utilities</a></li>
-                      <li><a href="../industries/banking-financial.php.html">Financial</a></li>
-                      <li><a href="../industries/government-agencies.php.html">Government Agencies</a></li>
-                      <li><a href="../industries/healthcare.php.html">Healthcare</a></li>
-                      <li><a href="../industries/logistics-transportation.php.html">Logistics & Transportation</a></li>
-                      <li><a href="../industries/manufacturing.php.html">Manufacturing</a></li>
-                      <li><a href="../industries/real-estate.php.html">Real Estate</a></li>
-                      <li> <a href="../industries/retail-ecommerce.php.html">Retail E-Commerce</a></li>
-                      <li><a href="../industries/telecom.php.html">Telecom</a></li>
-                      <li><a href="../industries/travel-hospitality.php.html">Travel</a></li>
-                      <li><a href="../industries/wireless-internet-service.php.html">Wireless Internet Service</a></li>
+                      <li><a href="automotive">Automotive</a></li>
+					 <li><a href="chemical">Chemical</a></li>
+					 <li><a href="education">Education</a></li>
+					 <li><a href="entertainment">Entertainment</a></li>
+					 <li><a href="energy-utilities">Energy Utilities</a></li>
+					 <li><a href="banking-financial">Financial</a></li>
+					 <li><a href="government-agencies">Government Agencies</a></li>
+					 <li><a href="healthcare">Healthcare</a></li>
+					 <li><a href="logistics">Logistics & Transportation</a></li>
+					 <li><a href="manufacturing">Manufacturing</a></li>
+					 <li><a href="real-estate">Real Estate</a></li>
+					 <li><a href="retail-ecommerce">Retail E-Commerce</a></li>
+					 <li><a href="telecom">Telecom</a></li>
+					 <li><a href="travel">Travel</a></li>
+					 <li><a href="wireless-internet-service">Wireless Internet Service</a></li>
                     </ul>
                     <!-- /.submenu -->
                   </li>
                  <li class="hidden-md-up"><a href="#"> Resources</a>
                   <ul class="submenu">
-                    <li> <a href="../videos.php.html">Videos</a> </li>
-                    <li><a href="../case-studies/index.htm">Case Studies</a> </li>
-                    <li> <a href="../blog/index.htm">Blog</a> </li>
-                    <li><a href="../blog/infographics/index.htm">Infographics</a> </li>
-                    <li><a href="../reference-letters/index.htm">Reference Letters</a> </li>
-                    <li><a href="../testimonials.php.html">Testimonials</a> </li>
+                      <li><a href="case-studies">Case Studies</a></li>
+					  <li><a href="blog/index.htm">Blog</a></li>
+					  <li><a href="blog/infographics/index.htm">Infographics</a></li>
+					  <li><a href="reference-letters/index.htm">Reference Letters</a></li>
+					  <li><a href="testimonials.php.html">Testimonials</a></li>
                   </ul>
                   <!-- /.submenu -->
                 </li>
                 <li class="hidden-md-up">
                   <a href="#">Company</a>
                   <ul class="submenu">
-                    <li><a href="../aboutus.php.html" title="About us">About Us</a> </li>
-                    <li><a href="../iso-certification.php.html">Certification</a> </li>
-                    <li><a href="../call-center-infrastructure.php.html" title="Infrastructure">Infrastructure</a> </li>
-                    <li><a href="../careers/index.htm" title="careers">Careers</a> </li>
-                    <li><a href="../contactus.php.html" title="Contact us">Contact Us</a> </li>
+                    <li><a href="aboutus" title="About us">About Us</a></li>
+					  <li><a href="certification">Certification</a></li>
+					  <li><a href="infrastructure" title="Infrastructure">Infrastructure</a></li>
+					  <li><a href="careers/index.htm" title="careers">Careers</a></li>
+					  <li><a href="contactus" title="Contact us">Contact Us</a></li>
                   </ul>
                   <!-- /.submenu -->
                 </li>
@@ -1093,6 +1104,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 </div>
 </header>
+
 </div>
 		<!-- breadcrumb-->
 		<div class="page-title parallax parallax1">
@@ -2263,7 +2275,7 @@ form.submit();
 				<div class="footer-feat-box box1 row">
 					<div class="col-md-3">
 						<div class="row">
-							<img src="../images/calculator-icon.png">
+							<img src="{% static 'resources/images/calculator-icon.png' %}">
 						</div>
 					</div>
 					<div class="col-md-9">
@@ -2277,7 +2289,7 @@ form.submit();
 				<div class="footer-feat-box box2 row">
 					<div class="col-md-3">
 						<div class="row">
-							<img src="../images/testmonial-icon.png">
+							<img src="{% static 'resources/images/testmonial-icon.png' %}">
 						</div>
 					</div>
 					<div class="col-md-9">
@@ -2291,7 +2303,7 @@ form.submit();
 				<div class="footer-feat-box box3 row">
 					<div class="col-md-3">
 						<div class="row">
-							<img src="../images/pricing-icon.png">
+							<img src="{% static 'resources/images/pricing-icon.png' %}">
 						</div>
 					</div>
 					<div class="col-md-9">

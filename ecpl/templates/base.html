@@ -15,6 +15,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		<!-------font awesome------------>
 		<script src="https://kit.fontawesome.com/cb6bf3d45d.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="{% static 'resources/favicon-1.ico' %}" type="image/x-icon">
+
 
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
@@ -118,12 +120,12 @@
 		<div class="main-header">
 			<header class="container">
 			  <nav class="navbar ">
-				<a class="navbar-brand" href="">
+				<a class="navbar-brand" href="/">
 				  <img src="{% static 'resources/images/expertcallers-logo.png' %}" alt="Expertcallers logo" class="img-fluid">
 				</a>
 				<ul class="nav nav-inline float-md-right top-menu">
 				  <li class="nav-item hidden-md-down">
-					<a class="nav-link" href="call-center-bpo-services.php.html">Services</a>
+					<a class="nav-link" href="bpo-services">Services</a>
 				  </li>
 				  <li class="nav-item hidden-md-down dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
@@ -133,13 +135,12 @@
 					  <a class="dropdown-item" href="education">Education</a>
 					  <a class="dropdown-item" href="entertainment">Entertainment</a>
 					  <a class="dropdown-item" href="energy-utilities">Energy Utilities</a>
-					  <a class="dropdown-item" href="industries/banking-financial.php.html">Financial</a>
+					  <a class="dropdown-item" href="banking-financial">Financial</a>
 					  <a class="dropdown-item" href="government-agencies">Government Agencies</a>
-					  <a class="dropdown-item" href="industries/healthcare.php.html">Healthcare</a>
+					  <a class="dropdown-item" href="healthcare">Healthcare</a>
 					  <a class="dropdown-item" href="logistics">Logistics & Transportation</a>
 					  <a class="dropdown-item" href="manufacturing">Manufacturing</a>
-					  <a class="dropdown-item" href="industries/real-estate.php.html">Real Estate</a>
-
+					  <a class="dropdown-item" href="real-estate">Real Estate</a>
 					  <a class="dropdown-item" href="retail-ecommerce">Retail E-Commerce</a>
 					  <a class="dropdown-item" href="telecom">Telecom</a>
 					  <a class="dropdown-item" href="travel">Travel</a>
@@ -217,9 +218,9 @@
 
 							<a class="dropdown-item" href="virtual">Virtual Receptionist Services</a>
 
-							<a class="dropdown-item" href="inbound-call-center/medical-answering-services.php.html">Medical Answering Services</a>
+							<a class="dropdown-item" href="medical-answering">Medical Answering Services</a>
 
-							<a class="dropdown-item" href="inbound-call-center/phone-answering-services.php.html">Phone Answering Services</a>
+							<a class="dropdown-item" href="phone-answering">Phone Answering Services</a>
 
 							<a class="dropdown-item" href="upselling">Up-selling and Cross-selling Services</a>
 
@@ -241,15 +242,15 @@
 
 							<a class="dropdown-item" href="outbound-home">Outbound Call Center</a>
 
-							<a class="dropdown-item" href="outbound-call-center/cold-calling-services.php.html">Cold Calling Services</a>
+							<a class="dropdown-item" href="cold-calling-services">Cold Calling Services</a>
 
 							<a class="dropdown-item" href="lead-generation">Lead Generation Services</a>
 
-							<a class="dropdown-item" href="outbound-call-center/customer-satisfaction-surveys.php.html">Customer Satisfaction Surveys</a>
+							<a class="dropdown-item" href="customer-satisfaction">Customer Satisfaction Surveys</a>
 
 							<a class="dropdown-item" href="customer-acquisition-services">Customer Acquisition and Telesales Services</a>
 
-							<a class="dropdown-item" href="outbound-call-center/appointment-setting-services.php.html">Appointment Setting Services</a>
+							<a class="dropdown-item" href="appointment-setting-services">Appointment Setting Services</a>
 
 							<a class="dropdown-item" href="database-services">Database Development and Management Services </a>
 
@@ -279,13 +280,13 @@
 
 					<li class="nav-item">
 
-						<a class="nav-link" href="email-support-services.php.html">EMAIL SUPPORT</a>
+						<a class="nav-link" href="email-support">EMAIL SUPPORT</a>
 
 					</li>
 
 					<li class="nav-item">
 
-						<a class="nav-link" href="chat-support-services.php.html">CHAT SUPPORT</a>
+						<a class="nav-link" href="chat-support">CHAT SUPPORT</a>
 
 					</li>
 
@@ -313,13 +314,13 @@
 
 							<a class="dropdown-item" href="business-process-as-a-service.php.html">BPasS</a>
 
-							<a class="dropdown-item" href="cati-services/index.htm" class="dropdown-item" id="cati-services">CATI Services </a>
+							<a class="dropdown-item" href="cati-services" class="dropdown-item" id="cati-services">CATI Services </a>
 
-							<a class="dropdown-item" href="cctv-monitoring.php.html">CCTV Monitoring</a>
+							<a class="dropdown-item" href="cctv-monitoring">CCTV Monitoring</a>
 
-							<a class="dropdown-item" href="telemarketing-services/index.htm">Telemarketing</a>
+							<a class="dropdown-item" href="telemarketing">Telemarketing</a>
 
-							<a class="dropdown-item" href="disaster-recovery-services.php.html">Disaster Recovery Services</a>
+							<a class="dropdown-item" href="disaster-recovery">Disaster Recovery Services</a>
 
 							<a class="dropdown-item" href="call-center-consulting-services.php.html" class="dropdown-item" id="call-center-consulting-services">Call Center Consulting Services </a>
 							<a class="dropdown-item" href="super-agent-services.php.html" class="dropdown-item">Super Agent Services </a>
@@ -331,7 +332,7 @@
 
 					<li class="nav-item hidden-md-up">
 
-						<a class="nav-link" href="aboutus.php.html">Company</a>
+						<a class="nav-link" href="aboutus">Company</a>
 
 					</li>
 
@@ -340,22 +341,22 @@
 
 			<a class="nav-link  dropdown-toggle" id="other-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
 			<div class="dropdown-menu" aria-labelledby="industries">
-			  <a class="dropdown-item" href="industries/automotive.php.html">Automotive</a>
-			  <a class="dropdown-item" href="industries/chemical-pharmaceutical.php.html">Chemical</a>
-			  <a class="dropdown-item" href="industries/education.php.html">Education</a>
-			  <a class="dropdown-item" href="industries/entertainment.php.html">Entertainment</a>
-			  <a class="dropdown-item" href="industries/energy-utilities.php.html">Energy Utilities</a>
-			  <a class="dropdown-item" href="industries/banking-financial.php.html">Financial</a>
-			  <a class="dropdown-item" href="industries/government-agencies.php.html">Government Agencies</a>
-			  <a class="dropdown-item" href="industries/healthcare.php.html">Healthcare</a>
-			  <a class="dropdown-item" href="industries/logistics-transportation.php.html">Logistics & Transportation</a>
-			  <a class="dropdown-item" href="industries/manufacturing.php.html">Manufacturing</a>
-			  <a class="dropdown-item" href="industries/real-estate.php.html">Real Estate</a>
+			  <a class="dropdown-item" href="automotive">Automotive</a>
+			  <a class="dropdown-item" href="chemical">Chemical</a>
+			  <a class="dropdown-item" href="education">Education</a>
+			  <a class="dropdown-item" href="entertainment">Entertainment</a>
+			  <a class="dropdown-item" href="energy-utilities">Energy Utilities</a>
+			  <a class="dropdown-item" href="banking-financial">Financial</a>
+			  <a class="dropdown-item" href="government-agencies">Government Agencies</a>
+			  <a class="dropdown-item" href="healthcare">Healthcare</a>
+			  <a class="dropdown-item" href="logistics">Logistics & Transportation</a>
+			  <a class="dropdown-item" href="manufacturing">Manufacturing</a>
+			  <a class="dropdown-item" href="real-estate">Real Estate</a>
 
-			  <a class="dropdown-item" href="industries/retail-ecommerce.php.html">Retail E-Commerce</a>
-			  <a class="dropdown-item" href="industries/telecom.php.html">Telecom</a>
-			  <a class="dropdown-item" href="industries/travel-hospitality.php.html">Travel</a>
-			  <a class="dropdown-item" href="industries/wireless-internet-service.php.html">Wireless Internet Service</a>
+			  <a class="dropdown-item" href="retail-ecommerce">Retail E-Commerce</a>
+			  <a class="dropdown-item" href="telecom">Telecom</a>
+			  <a class="dropdown-item" href="travel">Travel</a>
+			  <a class="dropdown-item" href="wireless-internet-service">Wireless Internet Service</a>
 			</div>
 		  </li>
 					<li class="nav-item hidden-md-up">
@@ -366,7 +367,7 @@
 
 					<li class="nav-item contact hidden-md-up">
 
-						<a class="nav-link" href="contactus.php.html">Contact us</a>
+						<a class="nav-link" href="contactus">Contact us</a>
 
 					</li>
 
@@ -439,7 +440,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6 col-sm-12 footer">
-				<div class="row">
+				<div class="row" style="width: max-content;">
 
 					<ul id="social-icons" class="pull-left">
 						<li><a href="expertcallers.html" rel="nofollow"><i class="icon ion-social-twitter"></i></a></li>

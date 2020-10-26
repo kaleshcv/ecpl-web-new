@@ -1,10 +1,14 @@
 from django.urls import path
 from .views import homepage,aboutus,certification,infrastructure,contactus,inbound,claimsprocessing,productinformation,ordertaking
 from .views import virtual,upselling,tollfree,answer800,ivrservices,customersupport,socialmedia,csr,technicalsupport,helpdesk,remote
-from .views import automotive,chemical,education,entertainment,energy,govt,logistics,manufacturing,retailecommerce,telecom,travel,wirelessinternetservice
+from .views import automotive,chemical,education,entertainment,energy,govt,logistics,manufacturing,retailecommerce,telecom,travel,wirelessinternetservice,realestate,bankingfinancial
 from .views import customeracquisitionservices,databaseservices,directmail,marketintelligence,outbound,coldcallingservices,leadgeneration
+from .views import customersatisfaction,appointmentsetting
+from .views import bposervices,phoneanswering,medicalanswering
 from .views import videos,casestudies
-
+from .views import emailsupport,chatsupport
+from .views import catiservice,cctvmonitoring,telemarketing,disasterrecovery
+from .views import healthcare
 
 urlpatterns = [
     path('',homepage),
@@ -39,6 +43,7 @@ urlpatterns = [
     path('telecom',telecom),
     path('travel',travel),
     path('wireless-internet-service',wirelessinternetservice),
+    path('real-estate',realestate),
     path('customer-acquisition-services',customeracquisitionservices),
     path('database-services',databaseservices),
     path('direct-mail',directmail),
@@ -48,4 +53,18 @@ urlpatterns = [
     path('outbound-home',outbound),
     path('cold-calling-services',coldcallingservices),
     path('lead-generation',leadgeneration),
+    path('customer-satisfaction',customersatisfaction),
+    path('appointment-setting-services',appointmentsetting),
+    path('email-support',emailsupport),
+    path('chat-support',chatsupport),
+    path('cati-services',catiservice),
+    path('cctv-monitoring',cctvmonitoring),
+    path('telemarketing',telemarketing),
+    path('bpo-services',bposervices),
+    path('phone-answering',phoneanswering),
+    path('medical-answering',medicalanswering),
+    path('disaster-recovery',disasterrecovery),
+    path('banking-financial',bankingfinancial),
+    path('healthcare',healthcare),
+
 ]

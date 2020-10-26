@@ -18,6 +18,11 @@ def contactus(request):
 #INBOUND
 def inbound(request):
     return render(request,'inbound/inbound.html')
+def phoneanswering(request):
+    return render(request,'inbound/phone-answering-services.html')
+def medicalanswering(request):
+    return render(request,'inbound/medical-answering-services.html')
+
 def claimsprocessing(request):
     return render(request,'inbound/claims-processing-services.html')
 
@@ -79,9 +84,15 @@ def telecom(request):
     return render(request,'industries/telecom.html')
 def travel(request):
     return render(request,'industries/travel.html')
-
+def realestate(request):
+    return render(request,'industries/real-estate.html')
 def wirelessinternetservice(request):
     return render(request,'industries/wireless-internet-service.html')
+def bankingfinancial(request):
+    return render(request,'industries/banking-financial.html')
+def healthcare(request):
+    return render(request,'industries/healthcare.html')
+
 
 #OUTBOUND
 def customeracquisitionservices(request):
@@ -98,7 +109,32 @@ def coldcallingservices(request):
     return render(request,'outbound/cold-calling-services.html')
 def leadgeneration(request):
     return render(request,'outbound/lead-generation-services.html')
+def customersatisfaction(request):
+    return render(request,'outbound/customer-satisfaction.html')
+def appointmentsetting(request):
+    return render(request,'outbound/appointment-setting-services.html')
 
+#EMAIL SUPPORT
+def emailsupport(request):
+    return render(request,'email-support.html')
+
+#CHAT Support
+def chatsupport(request):
+    return render(request,'chat-support.html')
+
+#OTHER
+def catiservice(request):
+    return render(request,'cati-service.html')
+def cctvmonitoring(request):
+    return render(request,'cctv-monitoring.html')
+def telemarketing(request):
+    return render(request,'telemarketing.html')
+def disasterrecovery(request):
+    return render(request,'disaster-recovery.html')
+
+#SERVICES
+def bposervices(request):
+    return render(request,'bpo-services.html')
 
 #Resources
 def videos(request):

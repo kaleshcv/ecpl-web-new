@@ -990,7 +990,7 @@ p{margin-bottom: 20px;}
 }
 
 #mainnav > ul > li > a, #mainnav_1 > ul > li > a {
-    font-size: 14px;    
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
     display: block;
@@ -3079,7 +3079,7 @@ p{margin-bottom: 20px;}
 	background-color: rgba( 15, 54, 97, 0.5);
 }
 .section-overlay.style4 {
-	background: url(../../../images/expertcallers-breadcrumbs-1.png) no-repeat center right;
+	background: url(/static/resources/images/expertcallers-breadcrumbs-1.png) no-repeat center right;
     background-size: cover;
 }
 
@@ -3804,3 +3804,7 @@ top: 50%; -webkit-transform: translateX(-50%) translateY(-50%); transform: trans
 .wrap-formrequest p{clear: both;}
 .btn-mb-request-call{display:none}
 .single-post .main a{color: #00f !important;}
+
+p {
+    font-family: 'Work Sans', sans-serif !important;
+}
