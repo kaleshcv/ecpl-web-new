@@ -1,0 +1,41 @@
+{% extends 'base3.html' %}
+{% block title %}Call Center Outsourcing Company India, USA and UK{% endblock %}
+{% block main %}
+{% load static %}
+
+<div class="blog-title" style="background: #252729;padding: 100px;text-align: center">
+           <h1 style="color:White;">{{blogdetails.title}}</h1>
+            <p style="font-size: 16px;color:white;">{{blogdetails.date}}</p>
+</div>
+<section class="container pt-5">
+    <div class="blogs-new">
+        <div class="row">
+
+            <div class="col-md-12">
+
+                 <p style="text-align: justify">{{blogdetails.body|linebreaks}}</p>
+                 <img src="{{blogdetails.image.url}}" alt="" style="width:100%;">
+                 <br>
+                 <br>
+                 <h3>{{blogdetails.head1}}</h3>
+                 <p style="text-align: justify">{{blogdetails.para1|linebreaks}}</p>
+                 <h3>{{blogdetails.head2}}</h3>
+                 <p style="text-align: justify">{{blogdetails.para2|linebreaks}}</p>
+                 <h3>{{blogdetails.head3}}</h3>
+                 <p style="text-align: justify">{{blogdetails.para3|linebreaks}}</p>
+                 <h3>{{blogdetails.head4}}</h3>
+                 <p style="text-align: justify">{{blogdetails.para4|linebreaks}}</p>
+                 <h3>{{blogdetails.head5}}</h3>
+                 <p style="text-align: justify">{{blogdetails.para5|linebreaks}}</p>
+
+             </div>
+
+
+
+       </div>
+    </div>
+
+</section>
+
+
+{% endblock %}
