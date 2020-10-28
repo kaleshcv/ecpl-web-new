@@ -1,6 +1,21 @@
 from django.shortcuts import render
-
+from .models import Quickcontact
 # Create your views here.
+
+
+def addQuickContact(request):
+
+    if request.method=='POST':
+        qc=Quickcontact()
+        qc.name = request.POST.get('name')
+        qc.email = request.POST.get('email')
+        qc.contact = request.POST.get('phone')
+        qc.country = request.POST.get('country')
+        qc.requirement = request.POST.get('requirement')
+        qc.save()
+        return render(request,'index.html')
+    else:
+        pass
 
 
 def homepage(request):
@@ -168,3 +183,93 @@ def callcenterindia(request):
     return render(request,'call-center-services-india.html')
 def callcenterphilippines(request):
     return render(request,'call-center-services-philippines.html')
+
+
+#otherlinks
+
+def privacy(request):
+    return render(request,'privacy.html')
+
+#case studies
+
+def support247(request):
+    return render(request,'case-studies/24x7-support.html')
+def b2boutboundcallcenterservices(request):
+    return render(request,'case-studies/b2b-outbound-call-center-services.html')
+
+def bpostreamlining(request):
+    return render(request,'case-studies/bpo-streamlining-operations-scouting-company.html')
+def catimarketresearch(request):
+    return render(request,'case-studies/cati-market-research-services.html')
+
+def catiserviceshealth(request):
+    return render(request, 'case-studies/cati-services-health-insurance-provider.html')
+def catisurveyeretailer(request):
+    return render(request, 'case-studies/cati-survey-e-retailer.html')
+def cctvmonitoringsolutionrestaurant(request):
+    return render(request,'case-studies/cctv-monitoring-solution-restaurant.html')
+def coldcallingservicesformarket(request):
+    return render(request,'case-studies/cold-calling-services-for-market-inteligence-company.html')
+def customerfrenchbaker(request):
+    return render(request,'case-studies/customer-support-order-taking-for-french-baker.html')
+def customizedbpoprocesssolution(request):
+    return render(request,'case-studies/customized-bpo-process-solution.html')
+def disastergeneral(request):
+    return render(request,'case-studies/disaster-recovery-general-insurer.html')
+def effectiveukpromotioncompany(request):
+    return render(request,'case-studies/effective-inbound-and-outbound-support-for-a-uk-based-safety-promotion-company.html')
+def helpingpioneergap(request):
+    return render(request,'case-studies/helping-a-us-based-health-care-pioneer-widen-the-expense-profit-gap.html')
+def highlyproductivemulti(request):
+    return render(request,'case-studies/highly-productive-multi-channel-customer-support-for-a-domain-registry-service-provider.html')
+def howwemettheanswering(request):
+    return render(request,'case-studies/how-we-met-the-answering-threshold-mandate-of-less-than-20-seconds-for-alberta-insurance-council.html')
+def inboundcustomersupport(request):
+    return render(request,'case-studies/inbound-customer-support.html')
+def inboundtechsupport(request):
+    return render(request,'case-studies/inbound-tech-support.html')
+def inboundtechnicalsupportdesk(request):
+    return render(request,'case-studies/inbound-technical-support-desk.html')
+def ithelpdesksolution(request):
+    return render(request,'case-studies/it-helpdesk-solution.html')
+
+def leadgenerationaustralian(request):
+    return render(request,'case-studies/lead-generation-for-australian-based-mortgage-firm.html')
+def mobileapplicationsales(request):
+    return render(request,'case-studies/mobile-application-sales-outbound-calling.html')
+
+def multicitytelemarketing(request):
+    return render(request,'case-studies/multi-city-telemarketing-services.html')
+def ourmultilingualoutbound(request):
+    return render(request,'case-studies/our-multilingual-outbound-customer-support-helped-a-global-manufacturer-triple-sales-closing.html')
+def ourtelemarketingservices(request):
+    return render(request,'case-studies/our-telemarketing-services-helped-smartfoam-increase-appointment-settings-by-50.html')
+def outboundforretail(request):
+    return render(request,'case-studies/outbound-call-center-for-retail-giant.html')
+def outstandingcustomer(request):
+    return render(request,'case-studies/outstanding-customer-support-services.html')
+def productsalesoutbound(request):
+    return render(request,'case-studies/product-sales-outbound-cold-calling.html')
+def tier1(request):
+    return render(request,'case-studies/tier-1-technical-support-for-aviation-industry.html')
+
+
+#INBOUND EXTRA
+
+def billingqry(request):
+    return render(request,'inbound/billing-queries-services.html')
+def inquiryhandling(request):
+    return render(request,'inbound/inquiry-handling-services.html')
+def insuranceclaimsprocessing(request):
+    return render(request,'inbound/insurance-claims-processing-services.html')
+def ordermanagement(request):
+    return render(request,'inbound/order-management-services.html')
+
+def productrecall(request):
+    return render(request,'inbound/product-recall-management-services.html')
+def rebateprocessing(request):
+    return render(request,'inbound/rebate-processing-services.html')
+def reservationbooking(request):
+    return render(request,'inbound/reservation-booking-services.html')
+
+

@@ -10,6 +10,11 @@ from .views import emailsupport,chatsupport
 from .views import catiservice,cctvmonitoring,telemarketing,disasterrecovery,bpaas,callcenterconsulting,superagentservices,bilingual
 from .views import healthcare,testimonials
 from .views import bcpcovid,faq,callcenterindia,callcenterphilippines
+from .views import privacy
+from .views import support247,b2boutboundcallcenterservices,bpostreamlining,catimarketresearch,catiserviceshealth,catisurveyeretailer,cctvmonitoringsolutionrestaurant
+from .views import coldcallingservicesformarket,customerfrenchbaker
+from .views import *
+
 
 urlpatterns = [
     path('',homepage),
@@ -17,6 +22,9 @@ urlpatterns = [
     path('certification',certification),
     path('infrastructure',infrastructure),
     path('contactus',contactus),
+    #QuickContact
+    path('addQuickContact',addQuickContact),
+
     path('inbound',inbound),
     path('claimsprocessing',claimsprocessing),
     path('productinformation',productinformation),
@@ -77,4 +85,44 @@ urlpatterns = [
     path('call-center-faqs',faq),
     path('call-center-services-india',callcenterindia),
     path('call-center-services-philippines',callcenterphilippines),
+    path('privacy',privacy),
+    ##########
+    path('24x7-support',support247),
+    path('b2b-outbound-call-center-services',b2boutboundcallcenterservices),
+    path('bpo-streamlining-operations-scouting-company',bpostreamlining),
+    path('cati-market-research-services',catimarketresearch),
+    path('cati-services-health-insurance-provider',catiserviceshealth),
+    path('cati-survey-e-retailer',catisurveyeretailer),
+    path('cctv-monitoring-solution-restaurant',cctvmonitoringsolutionrestaurant),
+    path('cold-calling-services-for-market-inteligence-company',coldcallingservicesformarket),
+    path('customer-support-order-taking-for-french-baker',customerfrenchbaker),
+    path('customized-bpo-process-solution',customizedbpoprocesssolution),
+    path('disaster-recovery-general-insurer',disastergeneral),
+    path('effective-inbound-and-outbound-support-for-a-uk-based-safety-promotion-company',effectiveukpromotioncompany),
+    path('helping-a-us-based-health-care-pioneer-widen-the-expense-profit-gap',helpingpioneergap),
+    path('highly-productive-multi-channel-customer-support-for-a-domain-registry-service-provider',highlyproductivemulti),
+    path('how-we-met-the-answering-threshold-mandate-of-less-than-20-seconds-for-alberta-insurance-council',howwemettheanswering),
+    path('inbound-customer-support',inboundcustomersupport),
+    path('inbound-tech-support',inboundtechsupport),
+    path('inbound-technical-support-desk',inboundtechnicalsupportdesk),
+    path('it-helpdesk-solution',ithelpdesksolution),
+    path('lead-generation-for-australian-based-mortgage-firm',leadgenerationaustralian),
+    path('mobile-application-sales-outbound-calling',mobileapplicationsales),
+    path('multi-city-telemarketing-services',multicitytelemarketing),
+    path('our-multilingual-outbound-customer-support-helped-a-global-manufacturer-triple-sales-closing',ourmultilingualoutbound),
+    path('our-telemarketing-services-helped-smartfoam-increase-appointment-settings-by-50',ourtelemarketingservices),
+    path('outbound-call-center-for-retail-giant',outboundforretail),
+    path('outstanding-customer-support-services',outstandingcustomer),
+    path('product-sales-outbound-cold-calling',productsalesoutbound),
+    path('tier-1-technical-support-for-aviation-industry',tier1),
+
+    path('billing-queries-services',billingqry),
+    path('inquiry-handling-services',inquiryhandling), # PENDING
+    path('insurance-claims-processing-services',insuranceclaimsprocessing),
+    path('order-management-services',ordermanagement),
+    path('product-recall-management-services',productrecall),
+    path('rebate-processing-services',rebateprocessing),
+    path('reservation-booking-services',reservationbooking),
+
+
 ]

@@ -33,7 +33,7 @@
 
 						</p>
 						<div class="call-btn">
-						    <a href="bcp-covid-19.php.html" class="btn btn-primary" data-aos="fade-right">Learn More</a>
+						    <a href="bcp-covid-19" class="btn btn-primary" data-aos="fade-right">Learn More</a>
 							<!--<a href="https://youtu.be/DAxovcKhOFQ" class="btn btn-primary" data-target=#cor_video data-toggle=modal title="Watch Corporate Video"><img alt=play-button src=images/play-button.png> Watch Corporate Video</a>-->
 						</div>
 						<br>
@@ -49,13 +49,14 @@
 
 	<!-- <form name="SmallForm" method="post" action="/forms/contact-us-submit.php" onsubmit="return validateForm(this)"  id="SmallForm" enctype="multipart/form-data"> -->
 
-<form name="contact-form" method="post" action="/forms/contact-us-submit.php" onsubmit="" id="contact-form" enctype="multipart/form-data" novalidate="novalidate">
+<form name="contact-form" method="post" action="addQuickContact" id="contact-form" enctype="multipart/form-data" novalidate="novalidate">
+	{% csrf_token %}
 
 	<ul>
 
-		<li><input type="text" name="FirstName" placeholder="Name*" required="required"></li>
+		<li><input type="text" name="name" placeholder="Name*" required="required"></li>
 
-		<li><input required="required" type="email" name="Email" placeholder="Email*"></li>
+		<li><input required="required" type="email" name="email" placeholder="Email*"></li>
 
 		<li><input required="required" type="number" name="phone" placeholder="Contact Number*"></li>
 
@@ -465,7 +466,7 @@
 
 		<li class="deatils">
 
-		<textarea required="required" class="txt-area" rows="4" cols="" placeholder="Enter your requirements*" name="description"></textarea></li>
+		<textarea required="required" class="txt-area" rows="4" cols="" placeholder="Enter your requirements*" name="requirement"></textarea></li>
 
 	</ul>
 
@@ -481,7 +482,7 @@
 
 	<p class="text-white mb-0" style="font-size: 12px;">
 
-		We respect your privacy. <a href="privacy.php.html" target="_blank" class="text-white">Read our Policy</a>.
+		We respect your privacy. <a href="privacy" target="_blank" class="text-white">Read our Policy</a>.
 
 	</p>
 
@@ -616,7 +617,7 @@
 						<div class="item">
 							<div class="product-thumb col-md-12">
 								<div class="grey-box">
-									<h2 class=""><a href="outbound-call-center/index.htm" class="a-new">Outbound Call Center Services</a></h2>
+									<h2 class=""><a href="outbound-home" class="a-new">Outbound Call Center Services</a></h2>
 									<p>
 										Creating and monitoring an effective outbound call center process is part of our DNA. We pitch value proposition in clear and concise terms to help you generate more revenues.
 									</p>
@@ -627,7 +628,7 @@
 						<div class="item">
 							<div class="product-thumb col-md-12">
 								<div class="grey-box">
-									<h2 class=""><a href="outbound-call-center/cold-calling-services.php.html" class="a-new">Cold Calling Services</a></h2>
+									<h2 class=""><a href="cold-calling-services" class="a-new">Cold Calling Services</a></h2>
 									<p>
 										Our cold calling experts drive your sales campaigns and ensure that the right kind of message is communicated to prospects to convert them into leads.
 									</p>
@@ -638,7 +639,7 @@
 						<div class="item">
 							<div class="product-thumb col-md-12">
 								<div class="grey-box">
-									<h2 class=""><a href="outbound-call-center/lead-generation-services.php.html" class="a-new">Lead Generation Services</a></h2>
+									<h2 class=""><a href="lead-generation" class="a-new">Lead Generation Services</a></h2>
 									<p>
 										Our lead generation experts drive your sales campaigns and ensure that the right kind of message is communicated to prospects to convert them into leads.
 									</p>
@@ -649,7 +650,7 @@
 						<div class="item">
 							<div class="product-thumb col-md-12">
 								<div class="grey-box">
-									<h2 class=""><a href="outbound-call-center/appointment-setting-services.php.html" class="a-new">Appointment Setting Services</a></h2>
+									<h2 class=""><a href="appointment-setting-services" class="a-new">Appointment Setting Services</a></h2>
 									<p>
 										With a streamlined process for setting appointments, we ensure that clients meet or talk to the right prospects every time and get the most opportunities to generate revenue.
 									</p>
@@ -660,7 +661,7 @@
 						<div class="item">
 							<div class="product-thumb col-md-12">
 								<div class="grey-box">
-									<h2 class=""><a href="customer-support-services.php.html" class="a-new">Customer Support Services</a></h2>
+									<h2 class=""><a href="customersupport" class="a-new">Customer Support Services</a></h2>
 									<p>
 										We have hand-picked a team of experienced customer support executives who are proficient at accurately handling all the dilemmas your customers within minimal time.
 									</p>
@@ -671,7 +672,7 @@
 						<div class="item">
 							<div class="product-thumb col-md-12">
 								<div class="grey-box">
-									<h2 class=""><a href="email-support-services.php.html" class="a-new">Email Support Services</a></h2>
+									<h2 class=""><a href="email-support" class="a-new">Email Support Services</a></h2>
 									<p>
 										We leverage our 12 years of experience in the industry to provide prompt and courteous handling of customer queries via email and help build a better brand image.
 									</p>
@@ -682,7 +683,7 @@
 						<div class="item">
 							<div class="product-thumb col-md-12">
 								<div class="grey-box">
-									<h2 class=""><a href="chat-support-services.php.html" class="a-new">Chat Support Services</a></h2>
+									<h2 class=""><a href="chat-support" class="a-new">Chat Support Services</a></h2>
 									<p>
 										We provide chat support services which helps customers get quick answers and ensure they are comfortable doing business with your company.
 									</p>
@@ -693,7 +694,7 @@
 						<div class="item">
 							<div class="product-thumb col-md-12">
 								<div class="grey-box">
-									<h2 class=""><a href="technical-helpdesk/index.htm" class="a-new">Technical Support Services</a></h2>
+									<h2 class=""><a href="technical-support" class="a-new">Technical Support Services</a></h2>
 									<p>
 										Our operators are skilled and experienced in handling every type of technical support query and help customers navigate through the rigors of troubleshooting procedure.
 									</p>
@@ -754,7 +755,7 @@
 				</div>
 			</div>
 			<div class="col-md-12">
-				<div class="align-center"><a href="testimonials.php.html" class="more-teti">More Testimonials</a></div>
+				<div class="align-center"><a href="testimonials" class="more-teti">More Testimonials</a></div>
 			</div>
 		</div>
 	</section>
@@ -765,7 +766,7 @@
 				<div class="col-md-6 tit-txt" data-aos="fade-up" style="padding-top:70px;">
 					<h5 class="h5-new"><strong style="color: #bb0601;font-size:30px;">Our Success Stories</strong></h5>
 					<h2 class="pt-3 pb-3" style="font-size:34px !important;">Accelerating Growth, <br>Enhancing Operational Efficiency and Improving Bottom-Line</h2>
-					<a class="btn-primary btn-lg btn" href="case-studies/index.htm">View All Case Studies</a><br><br>
+					<a class="btn-primary btn-lg btn" href="case-studies">View All Case Studies</a><br><br>
 				</div>
 				<div class="col-md-6">
 					<div class="row bg-faded bg-primary">
