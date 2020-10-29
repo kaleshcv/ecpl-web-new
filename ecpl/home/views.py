@@ -273,3 +273,49 @@ def reservationbooking(request):
     return render(request,'inbound/reservation-booking-services.html')
 
 
+#OUTBOUND extra
+def b2bappointmentsetting(request):
+    return render(request,'outbound/b2b-appointment-setting-services.html')
+def b2bleadgeneration(request):
+    return render(request,'outbound/b2b-lead-generation-services.html')
+def customercomplaintmanagement(request):
+    return render(request,'outbound/customer-complaint-management-services.html')
+def customerfollowup(request):
+    return render(request,'outbound/customer-follow-up-services.html')
+def customerloyaltymanagement(request):
+    return render(request,'outbound/customer-loyalty-management-services.html')
+def debtcollection(request):
+    return render(request,'outbound/debt-collection-services.html')
+def dormantcustomerreactivation(request):
+    return render(request,'outbound/dormant-customer-reactivation-services.html')
+
+def informationverification(request):
+    return render(request,'outbound/information-verification-services.html')
+
+def leadgenerationstartups(request):
+    return render(request,'outbound/lead-generation-for-startups.html')
+def leadqualification(request):
+    return render(request,'outbound/lead-qualification-services.html')
+
+def productpromotion(request):
+    return render(request,'outbound/product-promotion-services.html')
+
+def realestateleadgeneration(request):
+    return render(request,'outbound/real-estate-lead-generation-services.html')
+
+def subscriptionrenewal(request):
+    return render(request,'outbound/subscription-renewal-services.html')
+
+def telemarketingleadgenerationservices(request):
+    return render(request,'outbound/telemarketing-lead-generation-services.html')
+
+def b2bcoldcallingservices(request):
+    return render(request,'outbound/b2b-cold-calling-services.html')
+
+def b2cappointmentsetting(request):
+    return render(request,'outbound/b2c-appointment-setting-services.html')
+def b2ccoldcallingservices(request):
+    return render(request,'outbound/b2c-cold-calling-services.html')
+def b2cleadgenerationservices(request):
+    return render(request,'outbound/b2c-lead-generation-services.html')
+
