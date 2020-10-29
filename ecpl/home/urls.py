@@ -124,5 +124,25 @@ urlpatterns = [
     path('rebate-processing-services',rebateprocessing),
     path('reservation-booking-services',reservationbooking),
 
+    path('b2b-appointment-setting-services',b2bappointmentsetting),
+    path('b2b-lead-generation-services',b2bleadgeneration),
+    path('customer-complaint-management-services',customercomplaintmanagement),
+    path('customer-follow-up-services',customerfollowup),
+    path('customer-loyalty-management-services',customerloyaltymanagement),
+    path('debt-collection-services',debtcollection),
+    path('dormant-customer-reactivation-services',dormantcustomerreactivation),
+    path('information-verification-services',informationverification),
+    path('lead-generation-for-startups',leadgenerationstartups),
+    path('lead-qualification-services',leadqualification),
+    path('product-promotion-services',productpromotion),
+    path('real-estate-lead-generation-services',realestateleadgeneration),
+    path('subscription-renewal-services',subscriptionrenewal),
+    path('telemarketing-lead-generation-services',telemarketingleadgenerationservices),
+    path('b2b-cold-calling-services',b2bcoldcallingservices),
+    path('b2c-appointment-setting-services',b2cappointmentsetting),
+    path('b2c-cold-calling-services',b2ccoldcallingservices),
+    path('b2c-lead-generation-services',b2cleadgenerationservices),
+
+
 
 ]
