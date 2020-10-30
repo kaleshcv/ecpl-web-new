@@ -143,6 +143,26 @@ urlpatterns = [
     path('b2c-cold-calling-services',b2ccoldcallingservices),
     path('b2c-lead-generation-services',b2cleadgenerationservices),
 
+    path('3-core-customer-support-needs-outsource-customer-support-services',corecustomerservices),
+    path('3-core-elements-for-contact-center-compliance',coreelemets),
+    path('3-ways-outsourcing-transforms-your-customer-experience',waysoutsourcing),
+    path('4-telesales-tips-to-become-successful-in-2018',telesales4tips),
+    path('5-biggest-customer-support-failures-that-will-cost-your-business',biggest5),
+    path('5-customer-service-practices-your-business-could-be-doing-better',cspractice5),
+    path('5-perfect-customer-acquisition-strategies-that-will-save-you-big-bucks',perfect5),
+    path('6-ways-to-make-your-ivr-more-customer-friendly',ways6tomake),
+    path('cross-selling-and-up-selling-best-practices-for-contact-centers',crossandupselling),
+    path('how-to-manage-big-data-in-your-call-center',howtomanage),
+    path('key-benefits-of-virtual-call-centers',keybenefits),
+    path('the-top-customer-service-trends-in-2018',thetoptrends),
+    path('tips-for-creating-effective-ivrs',tipsivr),
+    path('top-signs-you-are-heading-for-a-customer-service-disaster',topsigns),
+    path('what-comprises-a-strong-customer-service-department',whatcomprises),
+
+
+
+
+
 
 
 ]

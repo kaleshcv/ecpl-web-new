@@ -319,3 +319,39 @@ def b2ccoldcallingservices(request):
 def b2cleadgenerationservices(request):
     return render(request,'outbound/b2c-lead-generation-services.html')
 
+#ARTICLES
+
+def corecustomerservices(request):
+    return render(request,'articles/3-core-customer-support-needs-outsource-customer-support-services.html')
+def coreelemets(request):
+    return render(request,'articles/3-core-elements-for-contact-center-compliance.html')
+def waysoutsourcing(request):
+    return render(request,'articles/3-ways-outsourcing-transforms-your-customer-experience.html')
+def telesales4tips(request):
+    return render(request,'articles/4-telesales-tips-to-become-successful-in-2018.html')
+def biggest5(request):
+    return render(request,'articles/5-biggest-customer-support-failures-that-will-cost-your-business.html')
+def cspractice5(request):
+    return render(request,'articles/5-customer-service-practices-your-business-could-be-doing-better.html')
+
+def perfect5(request):
+    return render(request,'articles/5-perfect-customer-acquisition-strategies-that-will-save-you-big-bucks.html')
+def ways6tomake(request):
+    return render(request,'articles/6-ways-to-make-your-ivr-more-customer-friendly.html')
+
+def crossandupselling(request):
+    return render(request,'articles/cross-selling-and-up-selling-best-practices-for-contact-centers.html')
+
+def howtomanage(request):
+    return render(request,'articles/how-to-manage-big-data-in-your-call-center.html')
+def keybenefits(request):
+    return render(request,'articles/key-benefits-of-virtual-call-centers.html')
+def thetoptrends(request):
+    return render(request,'articles/the-top-customer-service-trends-in-2018.html')
+def tipsivr(request):
+    return render(request,'articles/tips-for-creating-effective-ivrs.html')
+def topsigns(request):
+    return render(request,'articles/top-signs-you-are-heading-for-a-customer-service-disaster.html')
+def whatcomprises(request):
+    return render(request,'articles/what-comprises-a-strong-customer-service-department.html')
+
