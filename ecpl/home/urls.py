@@ -17,13 +17,14 @@ from .views import *
 
 
 urlpatterns = [
-    path('',homepage),
+    path('',homepage,name='ecpl-home'),
     path('aboutus',aboutus),
     path('certification',certification),
     path('infrastructure',infrastructure),
-    path('contactus',contactus),
+    path('contactus',contactus,name='contact-us'),
     #QuickContact
     path('addQuickContact',addQuickContact),
+    path('addMainContact',addMainContact),
 
     path('inbound',inbound),
     path('claimsprocessing',claimsprocessing),
