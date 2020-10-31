@@ -605,8 +605,9 @@ svg { overflow: hidden;}
       <!-- Modal body -->
       <div class="modal-body">
          <div class="mb-getquote-form-title">Request a Callback</div>
-		 <form name="contact-form" method="post" action="/forms/contact-us-submit.php" onsubmit="" id="contact-form" enctype="multipart/form-data" novalidate="novalidate">
-								<div class="row">
+		 <form name="contact-form" method="post" action="addQuickContact" onsubmit="" id="contact-form" enctype="multipart/form-data" novalidate="novalidate">
+								{% csrf_token %}
+			 						<div class="row">
 									<div class="col-sm-12">
 										<input class="form-control" name="FirstName" type="text" placeholder="Name *">
 									</div>

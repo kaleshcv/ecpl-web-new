@@ -37,7 +37,10 @@ def addMainContact(request):
     else:
         return redirect('ecpl-home')
 
-
+def callcentercalculator(request):
+    return render(request,'callcenter-calculator.html')
+def pricing(request):
+    return render(request,'pricing.html')
 
 def homepage(request):
     return render(request,'index.html')

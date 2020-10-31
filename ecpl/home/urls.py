@@ -26,6 +26,10 @@ urlpatterns = [
     path('addQuickContact',addQuickContact),
     path('addMainContact',addMainContact),
 
+    #Calculator
+    path('callcenter-calculator',callcentercalculator),
+    path('pricing',pricing),
+
     path('inbound',inbound),
     path('claimsprocessing',claimsprocessing),
     path('productinformation',productinformation),
