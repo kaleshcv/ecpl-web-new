@@ -1,5 +1,6 @@
-from django.shortcuts import render
-from .models import Quickcontact
+from django.shortcuts import render,redirect
+from django.contrib import messages
+from .models import Quickcontact, MainContact
 # Create your views here.
 
 
@@ -7,16 +8,39 @@ def addQuickContact(request):
 
     if request.method=='POST':
         qc=Quickcontact()
-        qc.name = request.POST.get('name')
-        qc.email = request.POST.get('email')
+        qc.name = request.POST.get('FirstName')
+        qc.email = request.POST.get('Email')
         qc.contact = request.POST.get('phone')
         qc.country = request.POST.get('country')
-        qc.requirement = request.POST.get('requirement')
+        qc.requirement = request.POST.get('description')
         qc.save()
-        return render(request,'index.html')
+        messages.success(request,'Information submitted successfully !')
+        return redirect('ecpl-home')
     else:
-        pass
+        return redirect('ecpl-home')
 
+
+def addMainContact(request):
+    if request.method=='POST':
+        mc=MainContact()
+        mc.name = request.POST.get('FirstName')
+        mc.email = request.POST.get('Email')
+        mc.contact = request.POST.get('phone')
+        mc.country = request.POST.get('country')
+        mc.description = request.POST.get('description')
+        mc.company=request.POST.get('Company')
+        mc.service1=request.POST.get('service1')
+        mc.attachment=request.FILES['attachment']
+        mc.save()
+        messages.success(request,'Information submitted successfully !')
+        return redirect('contact-us')
+    else:
+        return redirect('ecpl-home')
+
+def callcentercalculator(request):
+    return render(request,'callcenter-calculator.html')
+def pricing(request):
+    return render(request,'pricing.html')
 
 def homepage(request):
     return render(request,'index.html')

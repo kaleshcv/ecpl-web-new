@@ -43,6 +43,8 @@
 					
 <div class="col-md-12 float-xs-right banner-form hidden-lg-down" data-aos="fade-left">
 
+
+
 <div class="contact-form-rytsidebar ">
 
 	<h3>Quick Contact</h3>
@@ -54,9 +56,9 @@
 
 	<ul>
 
-		<li><input type="text" name="name" placeholder="Name*" required="required"></li>
+		<li><input type="text" name="FirstName" placeholder="Name*" required="required"></li>
 
-		<li><input required="required" type="email" name="email" placeholder="Email*"></li>
+		<li><input required="required" type="email" name="Email" placeholder="Email*"></li>
 
 		<li><input required="required" type="number" name="phone" placeholder="Contact Number*"></li>
 
@@ -466,7 +468,7 @@
 
 		<li class="deatils">
 
-		<textarea required="required" class="txt-area" rows="4" cols="" placeholder="Enter your requirements*" name="requirement"></textarea></li>
+		<textarea required="required" class="txt-area" rows="4" cols="" placeholder="Enter your requirements*" name="description"></textarea></li>
 
 	</ul>
 
@@ -489,6 +491,13 @@
 	</form>
 
 </div>
+
+		{% for message in messages %}
+			<div class="alert alert-{{ message.tags }}">
+				{{ message }}
+			</div>
+		{% endfor %}
+
 
 </div>
 

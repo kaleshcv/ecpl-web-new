@@ -27,7 +27,8 @@
         <div class="col-md-12  banner-form">
 	<div class="contact-form-rytsidebar">
 		<h3>Quick Contact</h3>
-		<form name="SmallForm" method="post" action="/forms/contact-us-submit.php" onsubmit="return validateForm(this)" id="SmallForm" enctype="multipart/form-data">
+		<form name="SmallForm" method="post" action="addQuickContact" onsubmit="return validateForm(this)" id="SmallForm" enctype="multipart/form-data">
+			{% csrf_token %}
 			<ul>
 				<li><input type="text" name="FirstName" placeholder="Name*" required="required"></li>
 				<li><input required="required" type="email" name="Email" placeholder="Email*"></li>
