@@ -12,3 +12,4 @@ def blogdetails(request,pk):
 
     blogdetails=Blog.objects.get(pk=pk)
     return render(request,'blogdetails.html',{'blogdetails':blogdetails})
+

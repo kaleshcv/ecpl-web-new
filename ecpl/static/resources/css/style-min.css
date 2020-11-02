@@ -1,4 +1,8 @@
-p{text-align:justify}.banner-form,.callbtn,.singleTst{position:relative}.banner-form h3,.feature-info h4,.main-menu .navbar-nav a.nav-link,.sitempa_pg h2,footer h4{text-transform:uppercase}#content-container #left-container1 #contact-form,.calc-form li,.carousel,.client-testimonial,.cta,.gray-box,.home-banner,.infra,.singleTst .box,.slider_page,.why-us,div.uploader,div.uploader span.action,div.uploader span.filename{overflow:hidden}body{font-family:Roboto,sans-serif}h3.section-title.font{font-size:30px!important}.subheading,h3.section-title{font-size:16px;font-weight:400;text-align:center}h3.section-title{letter-spacing:1px;clear:both}.subheading{line-height:20px;margin-bottom:42px}.top-menu{margin:10px 0!important;display:block}
+p{text-align:justify}.banner-form,.callbtn,.singleTst{position:relative}.banner-form h3,.feature-info h4,.main-menu .navbar-nav a.nav-link,.sitempa_pg h2,footer h4{text-transform:uppercase}#content-container #left-container1 #contact-form,.calc-form li,.carousel,.client-testimonial,.cta,.gray-box,.home-banner,.infra,.singleTst .box,.slider_page,.why-us,div.uploader,div.uploader span.action,div.uploader span.filename{overflow:hidden}
+
+body{font-family: 'Roboto', sans-serif;}
+
+h3.section-title.font{font-size:30px!important}.subheading,h3.section-title{font-size:16px;font-weight:400;text-align:center}h3.section-title{letter-spacing:1px;clear:both}.subheading{line-height:20px;margin-bottom:42px}.top-menu{margin:10px 0!important;display:block}
 
 .top-menu .nav-item .nav-link{padding:8px 10px 6px!important;color:#333;font-family: 'Work Sans', sans-serif;}.top-menu .nav-item .nav-link:hover{color:#136fa0}.top-menu .nav-item.contact,.top-menu .nav-item.sales{border:1px solid #333;border-radius:5px}.nav-inline .nav-item+.nav-item,.nav-inline .nav-link+.nav-link{margin-left:5px}.main-menu{background:#374852;padding:0;border-radius:0}
 
@@ -114,4 +118,17 @@ body {
     text-decoration: none;
     font-size: 17px;
     font-weight: 700
+}
+
+.contactus-new p
+{
+    text-align:right;
+}
+
+
+.contactus-new .col-md-12 {
+    background: #e6e7e9;
+    padding: 20px;
+    border-radius: 20px;
+    margin:5px;
 }

@@ -20,7 +20,7 @@
                  <img style="height:300px;" src="{{blog.image.url}}" alt="">
                  <p style="font-size: 16px;">{{blog.date}}</p>
                  <h4>{{blog.title}}</h4>
-                 <p style="text-align:justify;">{{blog.snippet}}</p>
+                 <p style="text-align:justify;">{{blog.snippet|safe}}</p>
                  <a style="color:#c91616;" href="blogdetails/{{blog.id}}">Read More</a>
 
              </div>

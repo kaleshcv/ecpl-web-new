@@ -1,0 +1,30 @@
+{% extends 'base3.html' %}
+{% block title %}Call Center Outsourcing Company India, USA and UK{% endblock %}
+{% block main %}
+{% load static %}
+
+<div class="blog-title" style="background: #252729;padding: 100px;text-align: center">
+           <h1 style="color:White;">{{infodetails.title}}</h1>
+
+</div>
+<section class="container pt-5">
+    <div class="blogs-new">
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <p> {{infodetails.body|safe}}</p>
+                <br>
+
+
+             </div>
+
+
+
+       </div>
+    </div>
+
+</section>
+
+
+{% endblock %}

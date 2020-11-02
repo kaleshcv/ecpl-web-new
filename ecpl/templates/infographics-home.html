@@ -1,0 +1,30 @@
+{% extends 'base3.html' %}
+{% block title %}Call Center Outsourcing Company India, USA and UK{% endblock %}
+{% block main %}
+{% load static %}
+
+
+<section class="container pt-5">
+    <div class="infographics-new">
+       <div class="row">
+
+          {% for i in info %}
+            <div class="col-md-6">
+
+                 <img style="height:300px;" src="{{i.image.url}}" alt="">
+                    <br><br>
+                 <h4>{{i.title}}</h4>
+                <a href="infodetails/{{i.id}}">View</a>
+
+
+             </div>
+
+           {% endfor %}
+
+       </div>
+    </div>
+
+</section>
+
+
+{% endblock %}
