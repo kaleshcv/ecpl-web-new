@@ -1,5 +1,5 @@
 from django.db import models
-
+from ckeditor.fields import RichTextField
 # Create your models here.
 
 class Quickcontact(models.Model):
@@ -7,7 +7,7 @@ class Quickcontact(models.Model):
     name=models.CharField(max_length=100)
     email=models.EmailField()
     contact=models.IntegerField()
-    country=models.CharField(max_length=200)
+    country=models.CharField(max_length=200,null=True)
     requirement=models.TextField()
 
 class MainContact(models.Model):
@@ -32,3 +32,15 @@ class MainContact(models.Model):
     description=models.TextField()
     attachment=models.FileField(upload_to='static/contactform/attachments',null=True)
 
+class Infographics(models.Model):
+    title = models.CharField(max_length=300)
+    image=models.ImageField(upload_to='static/resources/infographics-images')
+    body=RichTextField(blank=True,null=True)
+
+
+
+
+    def __str__(self):
+        return self.title
+    def snippet(self):
+        return self.body[:200]+'...'

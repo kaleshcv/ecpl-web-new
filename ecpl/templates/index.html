@@ -492,11 +492,7 @@
 
 </div>
 
-		{% for message in messages %}
-			<div class="alert alert-{{ message.tags }}">
-				{{ message }}
-			</div>
-		{% endfor %}
+
 
 
 </div>
@@ -588,6 +584,15 @@
 			</div>
 </section>
 
+<div class="container" style="margin-top:50px">
+
+		{% for message in messages %}
+			<div class="alert alert-{{ message.tags }}" style="text-align: center;font-size: x-large">
+				{{ message }}
+			</div>
+		{% endfor %}
+</div>
+
 
 		<section class="pt-3">
 			<div class="container">
@@ -615,7 +620,7 @@
 						<div class="item">
 							<div class="product-thumb col-md-12">
 								<div class="grey-box">
-									<h2 class=""><a href="#" class="a-new">Inbound Call Center Services</a></h2>
+									<h2 class=""><a href="inbound" class="a-new">Inbound Call Center Services</a></h2>
 									<p>
 										We combine state-of-the-art technology and streamlined practices to effortlessly turn an account complain or a question into a positive, well-handled inquiry.
 									</p>

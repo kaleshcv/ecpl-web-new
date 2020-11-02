@@ -22,6 +22,8 @@ urlpatterns = [
     path('certification',certification),
     path('infrastructure',infrastructure),
     path('contactus',contactus,name='contact-us'),
+    path('infographics',infographics),
+    path('infodetails/<int:pk>',infodetails,name="infodetails"),
     #QuickContact
     path('addQuickContact',addQuickContact),
     path('addMainContact',addMainContact),

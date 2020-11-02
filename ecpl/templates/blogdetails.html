@@ -13,20 +13,10 @@
 
             <div class="col-md-12">
 
-                 <p style="text-align: justify">{{blogdetails.body|linebreaks}}</p>
+                 <p style="text-align: justify">{{blogdetails.body|safe}}</p>
                  <img src="{{blogdetails.image.url}}" alt="" style="width:100%;">
                  <br>
-                 <br>
-                 <h3>{{blogdetails.head1}}</h3>
-                 <p style="text-align: justify">{{blogdetails.para1|linebreaks}}</p>
-                 <h3>{{blogdetails.head2}}</h3>
-                 <p style="text-align: justify">{{blogdetails.para2|linebreaks}}</p>
-                 <h3>{{blogdetails.head3}}</h3>
-                 <p style="text-align: justify">{{blogdetails.para3|linebreaks}}</p>
-                 <h3>{{blogdetails.head4}}</h3>
-                 <p style="text-align: justify">{{blogdetails.para4|linebreaks}}</p>
-                 <h3>{{blogdetails.head5}}</h3>
-                 <p style="text-align: justify">{{blogdetails.para5|linebreaks}}</p>
+
 
              </div>
 

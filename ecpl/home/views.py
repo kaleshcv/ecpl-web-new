@@ -1,7 +1,19 @@
 from django.shortcuts import render,redirect
 from django.contrib import messages
-from .models import Quickcontact, MainContact
+from .models import Quickcontact, MainContact,Infographics
 # Create your views here.
+
+
+def infographics(request):
+    info=Infographics.objects.all()
+    data={'info':info}
+    return render(request,'infographics-home.html',data)
+
+def infodetails(request,pk):
+
+    infodetails=Infographics.objects.get(pk=pk)
+    return render(request,'infographics-details.html',{'infodetails':infodetails})
+
 
 
 def addQuickContact(request):
@@ -30,7 +42,18 @@ def addMainContact(request):
         mc.description = request.POST.get('description')
         mc.company=request.POST.get('Company')
         mc.service1=request.POST.get('service1')
-        mc.attachment=request.FILES['attachment']
+        mc.service2 = request.POST.get('service2')
+        mc.service3= request.POST.get('service3')
+        mc.service4 = request.POST.get('service4')
+        mc.service5 = request.POST.get('service5')
+        mc.service6 = request.POST.get('service6')
+        mc.service7 = request.POST.get('service7')
+        mc.service8 = request.POST.get('service8')
+        mc.service9 = request.POST.get('service9')
+        mc.service10 = request.POST.get('service10')
+        mc.service11 = request.POST.get('service11')
+        mc.service12 = request.POST.get('service12')
+        mc.attachment=request.FILES.get('attachment')
         mc.save()
         messages.success(request,'Information submitted successfully !')
         return redirect('contact-us')

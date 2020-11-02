@@ -1183,6 +1183,7 @@ Many businesses have integrated security solutions as part of their organization
 			
 	
 				<form name="SmallForm" method="post" action="addQuickContact" onsubmit="return validateForm(this)" id="SmallForm" enctype="multipart/form-data" class="contactform wrap-form clearfix">
+					{% csrf_token %}
 				<span class="flat-input"><input type="text" name="FirstName" placeholder="Name*" required="required"></span>
 				<span class="flat-input"><input required="required" type="email" name="Email" placeholder="Email*"></span>
 				<span class="flat-input"><input required="required" type="number" name="phone" placeholder="Contact Number*"></span>
@@ -1200,7 +1201,8 @@ Many businesses have integrated security solutions as part of their organization
 <div class="col-md-12  banner-form hidden-sm-down" style="display: none;">
 	<div class="contact-form-rytsidebar">
 		<h3>Quick Contact</h3>
-		<form name="SmallForm" method="post" action="/forms/contact-us-submit.php" onsubmit="return validateForm(this)" id="SmallForm" enctype="multipart/form-data">
+		<form name="SmallForm" method="post" action="addQuickContact" onsubmit="return validateForm(this)" id="SmallForm" enctype="multipart/form-data">
+			{% csrf_token %}
 			<ul>
 				<li><input type="text" name="FirstName" placeholder="Name*" required="required"></li>
 				<li><input required="required" type="email" name="Email" placeholder="Email*"></li>
@@ -1966,7 +1968,8 @@ form.submit();
 		<div class="wrap-formrequest">
 			
 	
-				<form name="SmallForm" method="post" action="/forms/contact-us-submit.php" onsubmit="return validateForm(this)" id="SmallForm" enctype="multipart/form-data" class="contactform wrap-form clearfix">
+				<form name="SmallForm" method="post" action="addQuickContact" onsubmit="return validateForm(this)" id="SmallForm" enctype="multipart/form-data" class="contactform wrap-form clearfix">
+					{% csrf_token %}
 				<span class="flat-input"><input type="text" name="FirstName" placeholder="Name*" required="required"></span>
 				<span class="flat-input"><input required="required" type="email" name="Email" placeholder="Email*"></span>
 				<span class="flat-input"><input required="required" type="number" name="phone" placeholder="Contact Number*"></span>
@@ -1984,7 +1987,8 @@ form.submit();
 <div class="col-md-12  banner-form hidden-sm-down" style="display: none;">
 	<div class="contact-form-rytsidebar">
 		<h3>Quick Contact</h3>
-		<form name="SmallForm" method="post" action="/forms/contact-us-submit.php" onsubmit="return validateForm(this)" id="SmallForm" enctype="multipart/form-data">
+		<form name="SmallForm" method="post" action="addQuickContact" onsubmit="return validateForm(this)" id="SmallForm" enctype="multipart/form-data">
+			{% csrf_token %}
 			<ul>
 				<li><input type="text" name="FirstName" placeholder="Name*" required="required"></li>
 				<li><input required="required" type="email" name="Email" placeholder="Email*"></li>
@@ -2768,7 +2772,8 @@ form.submit();
       <!-- Modal body -->
       <div class="modal-body">
          <div class="mb-getquote-form-title">Request a Callback</div>
-     <form name="contact-form" method="post" action="/forms/contact-us-submit.php" onsubmit="" id="contact-form" enctype="multipart/form-data" novalidate="novalidate">
+     <form name="contact-form" method="post" action="addQuickContact" onsubmit="" id="contact-form" enctype="multipart/form-data" novalidate="novalidate">
+		 {% csrf_token %}
                 <div class="row">
                   <div class="col-sm-12">
                     <input class="form-control" name="FirstName" type="text" placeholder="Name *">
