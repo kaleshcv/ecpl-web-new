@@ -1,0 +1,72 @@
+{% extends 'base3.html' %}
+{% block title %}Call Center Outsourcing Company India, USA and UK{% endblock %}
+{% block main %}
+{% load static %}
+
+
+<div class="container" style="padding-top:100px;padding-bottom:100px">
+    <h2>{{careers.designation}}</h2>
+   <div class="row">
+       <div class="col-md-7" style="border: 1px solid lightgrey;border-radius: 10px;padding: 10px 20px">
+
+								<p><b>Designation :</b>  {{careers.designation}}</p>
+                                <p><b>Project :</b>  {{careers.project}}</p>
+                                <p><b>Job Location :</b>  {{careers.job_location}}</p>
+                                <p><b>Work Timing :</b>  {{careers.work_timing}}</p>
+                                <p><b>Weekly off :</b>  {{careers.designation}}</p>
+                                <p><b>Education Requirements :</b>  {{careers.requirement}}</p>
+                                <p><b>Employement Type :</b>  {{careers.emp_type}}</p>
+                                <p><b>Salary Range :</b>  {{careers.salary}}</p>
+                                <p><b>Experience :</b>  {{careers.experience}}</p>
+                                <p><b>Skills Set :</b>  {{careers.skills}}</p>
+                                <p><b>Requirement :</b>  {{careers.requirement}}</p>
+                                <p><b>Interview Type :</b>  {{careers.interview_type}}</p>
+                                <p><b>Language :</b>  {{careers.language}}</p>
+                                <p><b>Others :</b>  {{careers.others}}</p>
+
+       </div>
+                <div class="col-md-5" style="padding: 20px 50px">
+                    <h2>Apply for this position</h2><br>
+
+                    <form class="form-contact contact_form" action="" method="post" novalidate="novalidate" enctype="multipart/form-data">
+                            {% csrf_token %}
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                        </div>
+                            </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input class="form-control" name="phone" id="subject" type="tel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Phone Number'" placeholder="Enter Phone Number">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <p>Resume</p>
+                                            <input class="form-control" name="resume" type="file" >
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group mt-3">
+                                    <button type="submit" class="button button-contactForm boxed-btn">submit</button>
+                                </div>
+                             </form>
+
+                </div>
+   </div>
+</div>
+
+
+
+
+{% endblock %}
+

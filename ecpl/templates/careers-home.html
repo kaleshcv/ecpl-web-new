@@ -1,0 +1,45 @@
+{% extends 'base3.html' %}
+{% block title %}Call Center Outsourcing Company India, USA and UK{% endblock %}
+{% block main %}
+{% load static %}
+
+
+<div class="container-fluid" style="background:#177ce8;color:white">
+    <div class="row" style="padding:30px 30px">
+        <div class="col-md-5" style="padding:70px">
+            <h2>Come work with us</h2>
+            <p class="text-justify">We are always looking for talent with a “Yes, we can!” attitude. If you see yourself working with a team of experts that love nothing more than to provide customers with the most unforgettable customer experiences, you are at the right place</p>
+        </div>
+        <div class="col-md-7">
+            <iframe width="100%" height="420" src="https://www.youtube.com/embed/Ybb-HAGO1vw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<section class="container pt-5">
+    <h4 class="text-center">Current Openings</h4>
+       <table class="table">
+              <thead>
+
+              </thead>
+
+                {% for career in careers %}
+                      <tbody>
+                        <tr>
+                            <td><a href="careers/{{career.id}}" style="color:darkgreen;font-weight: 800">{{ career.designation }}</a></td>
+                            <td><p style="background: #11ada6;color: white;border-radius: 5px;font-size: 14px;text-align: center">{{ career.project }}</p></td>
+
+                            <td><a href="careers/{{career.id}}" style="color: white;background: darkorange;padding: 10px 10px;border-radius: 4px">Apply</a></td>
+                        </tr>
+                      </tbody>
+                {% endfor %}
+            </table>
+
+</section>
+
+
+{% endblock %}
