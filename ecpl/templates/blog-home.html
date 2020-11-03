@@ -4,18 +4,40 @@
 {% load static %}
 
 <section class="container pt-5">
-    <h2 style="text-align:center">DIVE INTO OUR THOUGHTS ON CUSTOMER SUPPORT</h2><br>
-    <img width="100%" height="300" src="https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry.jpg" data-src="https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry.jpg" class="attachment-contentberg-main-full size-contentberg-main-full wp-post-image lazy loaded" alt="call center services for real estate industry" title="4 Common Real Estate Call Center Services you Should be Outsourcing" data-srcset="https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry.jpg 600w, https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry-300x150.jpg 300w" data-sizes="(max-width: 600px) 100vw, 600px" sizes="(max-width: 600px) 100vw, 600px" srcset="https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry.jpg 600w, https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry-300x150.jpg 300w" data-was-processed="true">
-    <p style="font-size: 16px;">CALL CENTER  -  AUGUST 27, 2020</p>
-    <h3>4 Common Real Estate Call Center Services you Should be Outsourcing</h3>
-    <p>The real estate business is all about sophistication and convenience. Nail these two and you could be laughing all the way to the bank. When it comes to the real estate industry, it’s particularly important to keep your communication lines open and active at all times because you never know when the right customer might reach out. Professionals like Ben Caballero have sold over 4500 homes that are worth approximately 1.9 billion dollars.</p>
+    <div class="row">
+        <div class="col-md-8">
+            <h3 style="text-align:center">DIVE INTO OUR THOUGHTS ON CUSTOMER SUPPORT</h3><br>
+            <img width="100%" height="300" src="https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry.jpg" data-src="https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry.jpg" class="attachment-contentberg-main-full size-contentberg-main-full wp-post-image lazy loaded" alt="call center services for real estate industry" title="4 Common Real Estate Call Center Services you Should be Outsourcing" data-srcset="https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry.jpg 600w, https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry-300x150.jpg 300w" data-sizes="(max-width: 600px) 100vw, 600px" sizes="(max-width: 600px) 100vw, 600px" srcset="https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry.jpg 600w, https://cdn.expertcallers.com/blog/wp-content/uploads/2020/08/call-center-services-for-real-estate-industry-300x150.jpg 300w" data-was-processed="true">
+            <p style="font-size: 16px;">CALL CENTER  -  AUGUST 27, 2020</p>
+            <h3>4 Common Real Estate Call Center Services you Should be Outsourcing</h3>
+            <p>The real estate business is all about sophistication and convenience. Nail these two and you could be laughing all the way to the bank. When it comes to the real estate industry, it’s particularly important to keep your communication lines open and active at all times because you never know when the right customer might reach out. Professionals like Ben Caballero have sold over 4500 homes that are worth approximately 1.9 billion dollars.</p>
+        </div>
+        <div class="col-md-4">
+            <h3 class="text-center">Recent Blogs</h3><br>
+            {% for blog in blogs %}
+             <div class="col-md-12 text-right" style="display:inline-flex;margin-bottom:5px;">
+
+                 <img style="width: 120px;height:80px;" src="{{blog.image.url}}" alt="">
+
+                 <p style="font-size:13px;letter-spacing: 1px;padding-left: 20px"><a href="blogdetails/{{blog.id}}" style="color:brown">{{blog.title}}</a></p>
+
+
+
+             </div>
+            <hr>
+
+           {% endfor %}
+
+        </div>
+
+    </div>
 </section>
 <section class="container pt-5">
     <div class="blogs-new">
        <div class="row">
 
            {% for blog in blogs %}
-             <div class="col-md-6">
+             <div class="col-md-6" style="padding: 40px 10px">
 
                  <img style="height:300px;" src="{{blog.image.url}}" alt="">
                  <p style="font-size: 16px;">{{blog.date}}</p>

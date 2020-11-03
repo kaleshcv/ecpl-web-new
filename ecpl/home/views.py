@@ -1,7 +1,18 @@
 from django.shortcuts import render,redirect
 from django.contrib import messages
-from .models import Quickcontact, MainContact,Infographics
+from .models import Quickcontact, MainContact,Infographics,Careers
 # Create your views here.
+
+
+def careerhome(request):
+    careers = Careers.objects.all()
+    data={'careers':careers}
+    return render(request,'careers-home.html',data)
+
+def careerview(request,pk):
+    careers=Careers.objects.get(pk=pk)
+    data={'careers':careers}
+    return render(request,'career-details.html',data)
 
 
 def infographics(request):

@@ -44,3 +44,21 @@ class Infographics(models.Model):
         return self.title
     def snippet(self):
         return self.body[:200]+'...'
+
+
+
+class Careers(models.Model):
+    designation=models.CharField(max_length=200)
+    project=models.CharField(max_length=200)
+    job_location=models.CharField(max_length=200)
+    work_timing=models.CharField(max_length=200)
+    weekly_off=models.CharField(max_length=200)
+    education=models.CharField(max_length=200)
+    emp_type=models.CharField(max_length=200)
+    salary=models.CharField(max_length=200)
+    experience=models.CharField(max_length=200)
+    skills=models.CharField(max_length=200)
+    requirement=models.TextField()
+    interview_type=models.CharField(max_length=200)
+    language=models.CharField(max_length=200)
+    others=models.CharField(max_length=200)
