@@ -1,0 +1,67 @@
+<link href="{% static 'resources/css-2.css?family=Work+Sans:400,600,700,800' %}" rel="stylesheet dns-prefetch">
+<link href="{% static 'resources/releases/v5.6.1/css/all.css' %}" rel="stylesheet dns-prefetch"> <script src="{% static 'resources/new/js/jquery.min.js' %}" content="noindex, nofollow"></script>
+<script src="{% static 'resources/bootstrap/4.4.1/js/bootstrap.min.js' %}" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" content="noindex, nofollow"></script>
+<script type="text/javascript" src="{% static 'resources/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'resources/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js' %}"></script>
+<script src="{% static 'resources/new/js/combined-scripts.js' %}" content="noindex, nofollow"></script>
+<script src="{% static 'resources/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js' %}" content="noindex, nofollow"></script>
+
+<link rel="icon" href="{% static 'resources/favicon-1.ico' %}" type="image/x-icon">
+<script src="https://kit.fontawesome.com/cb6bf3d45d.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+------------------------------------------------------------CALCULATOR----------------------
+
+<section class="section-inner bg-bgrey pt-0 pb-0">
+    <section class="content footer-feat hidden-md-down">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="footer-feat-box box1 row">
+					<div class="col-md-3">
+						<div class="row">
+							<img src="{% static 'resources/images/calculator-icon.png' %}">
+						</div>
+					</div>
+					<div class="col-md-9">
+						<h3>Staffing Calculator</h3>
+						<p style="margin-bottom: 34px;">Compute to know how much you get to save with our services  </p>
+						<a href="../callcenter-calculator.php-1.html" class="btn btn-warning">Know more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-feat-box box2 row">
+					<div class="col-md-3">
+						<div class="row">
+							<img src="{% static 'resources/images/testmonial-icon.png' %}">
+						</div>
+					</div>
+					<div class="col-md-9">
+						<h3>Case Studies</h3>
+						<p>Here are some real world examples of how our clients used our solutions to solve complex problems</p>
+						<a href="../case-studies/index.htm" class="btn btn-warning">Know more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-feat-box box3 row">
+					<div class="col-md-3">
+						<div class="row">
+							<img src="{% static 'resources/images/pricing-icon.png' %}">
+						</div>
+					</div>
+					<div class="col-md-9">
+						<h3>Pricing</h3>
+						<p>Our flexible pricing structure gives you the cost benefit you are looking for. </p>
+						<a href="../pricing.php.html" class="btn btn-warning">Know more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
