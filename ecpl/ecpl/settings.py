@@ -26,7 +26,7 @@ SECRET_KEY = '$yks(ib&9rz#$r4esywq45v&ucdwlg1=%ydct7go)gbn$2+h9='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-3-20-204-50.us-east-2.compute.amazonaws.com','0.0.0.0']
 
 
 # Application definition
@@ -126,5 +126,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
    os.path.join(BASE_DIR, "static")
 ]
+<<<<<<< HEAD
+=======
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+>>>>>>> 8cb6f69d3f5981f0c37730fff4db398ceb92237d
