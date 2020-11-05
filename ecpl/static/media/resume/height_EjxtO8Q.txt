@@ -1,0 +1,50 @@
+<!-- footer section -->
+		<section class="section-inner bg-bgrey pt-0 pb-0">
+    <section class="content footer-feat hidden-md-down">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="footer-feat-box box1 row" style="height:172px">
+					<div class="col-md-3">
+						<div class="row">
+							<img src="{% static 'resources/images/calculator-icon.png' %}">
+						</div>
+					</div>
+					<div class="col-md-9">
+						<h3>Staffing Calculator</h3>
+						<p style="margin-bottom: 34px;">Compute to know how much you get to save with our services  </p>
+						<a href="callcenter-calculator" class="btn btn-warning">Know more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-feat-box box2 row" style="height:172px">
+					<div class="col-md-3">
+						<div class="row">
+							<img src="{% static 'resources/images/testmonial-icon.png' %}">
+						</div>
+					</div>
+					<div class="col-md-9">
+						<h3>Case Studies</h3>
+						<p>Here are some real world examples of how our clients used our solutions to solve complex problems</p>
+						<a href="case-studies" class="btn btn-warning">Know more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-feat-box box3 row" style="height:172px">
+					<div class="col-md-3">
+						<div class="row">
+							<img src="{% static 'resources/images/pricing-icon.png' %}">
+						</div>
+					</div>
+					<div class="col-md-9">
+						<h3>Pricing</h3>
+						<p>Our flexible pricing structure gives you the cost benefit you are looking for. </p>
+						<a href="pricing" class="btn btn-warning">Know more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

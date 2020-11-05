@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib import messages
-from .models import Quickcontact, MainContact,Infographics,Careers
+from .models import Quickcontact, MainContact,Infographics,Careers,Candidate
+from . import forms
 # Create your views here.
 
 
@@ -10,9 +11,22 @@ def careerhome(request):
     return render(request,'careers-home.html',data)
 
 def careerview(request,pk):
+    form = forms.Candidate()
+
     careers=Careers.objects.get(pk=pk)
-    data={'careers':careers}
+    data={'careers':careers,'form':form}
     return render(request,'career-details.html',data)
+
+def addcandidate(request):
+    name = request.POST['name']
+    email = request.POST['email']
+    phone = request.POST['phone']
+    resume = request.FILES.get('resume')
+    candidate = Candidate(name=name, email=email, phone=phone, resume=resume)
+    candidate.save()
+    messages.success(request, 'Information Submitted !')
+    return redirect('careers')
+
 
 
 def infographics(request):

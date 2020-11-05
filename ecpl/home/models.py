@@ -62,3 +62,10 @@ class Careers(models.Model):
     interview_type=models.CharField(max_length=200)
     language=models.CharField(max_length=200)
     others=models.CharField(max_length=200)
+
+class Candidate(models.Model):
+    name=models.CharField(max_length=50)
+    email=models.EmailField()
+    phone=models.IntegerField()
+    resume=models.FileField(upload_to="static/media/resume")
+

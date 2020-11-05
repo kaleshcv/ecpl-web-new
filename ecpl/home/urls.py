@@ -24,8 +24,10 @@ urlpatterns = [
     path('contactus',contactus,name='contact-us'),
     path('infographics',infographics),
     path('infodetails/<int:pk>',infodetails,name="infodetails"),
-    path('careers',careerhome),
+    path('careers',careerhome,name='careers'),
     path('careers/<int:pk>',careerview),
+    path('addcandidate',addcandidate),
+
     #QuickContact
     path('addQuickContact',addQuickContact),
     path('addMainContact',addMainContact),
