@@ -33,7 +33,7 @@ urlpatterns = [
     path('addMainContact',addMainContact),
 
     #Calculator
-    path('callcenter-calculator',callcentercalculator),
+    path('callcenter-calculator',callcentercalculator,name='callcenter-calculator'),
     path('pricing',pricing),
 
     path('inbound',inbound),
@@ -169,6 +169,7 @@ urlpatterns = [
     path('tips-for-creating-effective-ivrs',tipsivr),
     path('top-signs-you-are-heading-for-a-customer-service-disaster',topsigns),
     path('what-comprises-a-strong-customer-service-department',whatcomprises),
+    path('sitemap',sitemap),
 
 
 

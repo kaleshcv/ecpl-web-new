@@ -52,7 +52,7 @@ def addQuickContact(request):
         qc.requirement = request.POST.get('description')
         qc.save()
         messages.success(request,'Information submitted successfully !')
-        return redirect('ecpl-home')
+        return redirect('callcenter-calculator')
     else:
         return redirect('ecpl-home')
 
@@ -427,3 +427,5 @@ def topsigns(request):
 def whatcomprises(request):
     return render(request,'articles/what-comprises-a-strong-customer-service-department.html')
 
+def sitemap(request):
+    return render(request,'sitemap.html')
